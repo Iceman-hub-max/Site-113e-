@@ -1,0 +1,77 @@
+Cahier des charges : Site du 113e escadron de Robinson:
+
+Identité : 
+  - nom = Escadron RP FR DCS
+  - logo = C:\Users\enzoj\OneDrive\Documents\PROGRAMMATION\Site\Site 113e Escadron de robinson\Image
+
+Menu : 
+  - L'escadron :
+    - Présentation
+    - Photos
+    - La hiérarchie
+    - Membres
+    - Statistiques 
+  - Le Mirage 2000 C :
+    - Les bases 
+      - Les caractéristiques
+      - Le cockpit
+      - L'Allumage
+    - La navigation
+      - La centrale inertielle
+      - Le TACAN
+      - Les VOR et ILS
+      - A vue 
+      - Le ravitaillement
+    - Le radar
+    - L'armement
+      - Le Air Sol  
+        Le Bombardement 
+        Les rockettes
+        Les cibles particulières
+      - Le Air Air 
+        - Le BVR (Beyond Visual Range)
+          - Les Matra 530 D
+        - Le Combats Rapproché 
+          - Les Magic II
+        - Le Dogfight 
+          - Les manoeuvres
+          - Utilisation du canon
+    - Les systemes de protection
+      - Le RWR (Radar Warning Reciver)
+      - Le systeme D2M
+      - Les contres-mesures
+        - Les flares
+        - Les paillettes
+    - Les pannes
+      - les pannes moteurs
+      - les pannes de commande de vol électrique
+      - les pannes hydraulique
+      - les fuites de carburants
+      - les vrilles
+      - le décrochage 
+  - La Communication :
+    - L'alphabet aéronautique
+    - le metar / taf / Atis
+    - La communication pilote - ATC
+      - la mise en route
+      - le roulage
+      - le décollage
+      - la navigation
+      - la mission
+      - l'approche
+      - l'atterrissage
+      - les urgences
+    - La communication pilote - pilote
+      - les codes de communications
+      - le vol en formation
+  - Le Commandement : 
+    - les briefings
+    - le bilan de masse
+    - le bilan de carburant
+    - les techniques de navigations
+    - les interceptions
+  - A propos :
+    - Disclammer
+  - Nous Contacter :
+    - Adresse mail
+
