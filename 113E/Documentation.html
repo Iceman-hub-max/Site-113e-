@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Massively by HTML5 UP</title>
@@ -11,6 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.center{
+				text-align : center;
+			}
+			.carre::before{
+				content:"■";
+                color: black;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -52,10 +56,62 @@
 						</header>
 
 						<section>
-							<p>Nous vous proposons des documentations pour apprendre à piloter le Mirage 2000 C, et le Rafale. Ces documentations
-							sont réalisées par nos formateurs. Ce ne sont ni des pilotes agréés ni des professionnels des DCS world, il peut donc 
+							<p>Nous vous proposons des documentations afin d'apprendre à piloter le Mirage 2000 C, et le Rafale. Ces documentations
+							sont réalisées par nos formateurs. Ce ne sont ni des pilotes agréés ni des professionnels de DCS world, il peut donc 
 							y avoir des erreurs, dans ce cas, merci de nous contacter.</p>
-							<a href="pages documentation/index-documentation.html">Ouvrir l'index sur les documentations du Mirage 2000 C</a>
+							<p>Sur cette page, vous apprendrez <a href="#bases">les points importants de l'aéronautique.</a>
+							Vous trouverez également les documentations spécifiques au <a href="#Mirage">Mirage 2000c</a> et au <a href="#Rafale">Rafale</a></p>
+
+							<div class="center" id="Mirage">
+                                <img src="images/mirage2000c.jpg" alt="Image mirage 2000 c" width="700" height="400">
+                            </div>
+							<p>Vous trouverez ci-dessous l'index des documentations pour le mirage 2000 C :</p>
+							<a href="pages documentation/index-documentation.html">Ouvrir l'index</a>
+
+						</section>
+						<section>
+							<div class="center" id="Rafale">
+                                <img src="images/rafale.jpg" alt="Image rafale" width="700" height="400">
+                            </div>
+							<p>Ci-dessous vous trouverez le lien pour accéder aux formations du rafale. (Indisponible pour le moment): </p>
+							<a href="#">Ouvrir l'index</a>
+						</section>
+						<section>
+							<h2 id="bases">Les bases de l'aéronautique :</h2>
+							<a href="pages documentation/alphabet.html" class="carre"> L'alphabet et les chiffres aéronautiques</a>
+                            <br>
+							<a href="#" class="carre"> Les unités de mesures</a>
+                            <br>
+							<a href="#" class="carre"> L'architecture des aéroports</a>
+                            <br>
+							<a href="#" class="carre"> Lecture des cartes</a>
+                            <br>
+						</section>
+						<section>
+							<h2>Les communications entre leader et contrôleur</h2>
+							<a href="#" class="carre"> Les METAR, le TAF et les ATIS</a>
+                            <br>
+							<a href="#" class="carre"> Les phraséologies</a>
+                            <br>
+						</section>
+						<section>
+							<h2>Les communications entre leader et équipier</h2>
+							<a href="#" class="carre"> Les codes de communication</a>
+                            <br>
+							<a href="#" class="carre"> Le vol en formation</a>
+                            <br>
+						</section>
+
+						<section>
+							<h2>Le rôle du leader dans le commandement</h2>
+							<a href="#" class="carre"> Introduction</a>
+                            <br>
+							<a href="#" class="carre"> Les briefings</a>
+                            <br>
+							<a href="#" class="carre"> Les techniques de navigations</a>
+                            <br>
+							<a href="#" class="carre"> Les interceptions</a>
+                            <br>
 						</section>
 					</div>
 				<!-- Footer -->
