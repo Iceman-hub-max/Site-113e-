@@ -6,15 +6,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
-        <style>
-            .center{
-                text-align: center;
-            }
-            .carre::before{
-                content:"■";
-                color: black;
-            }
-        </style>
+		<style>
+			.tooltip {
+				position : relative;
+				cursor : pointer;
+			}
+			.tooltip:hover::after{
+				content: attr(data-tooltip);
+				position: absolute;
+				bottom 120%;
+				left: 50%;
+				transform: translateX(-50%);
+				background-color: #333;
+  				color: #fff;
+				padding: 5px;
+				border-radius: 5px;
+				white-space: nowrap;
+				z-index: 1;
+			}
+			
+
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -41,7 +53,7 @@
 					<nav id="nav">
 						<ul class="links">
 							<li><a href="../index.html">Voici le 113e</a></li>
-							<li class="active"><a href="../Documentation.html">Documentation</a></li>
+							<li class="active"><a href="../Documentation.html">L'alphabet phonétique</a></li>
                             <li><a href="../Notre équipe.html">Notre équipe</a></li>
 						</ul>
 						<ul class="icons">
@@ -51,61 +63,29 @@
 					</nav>
                 <!--Main-->
                     <div id="main">
-                        <header>
-                            <h1>DOCUMENTATION MIRAGE 2000</h1>
-                            <p>Vous trouverez ci-dessous, toutes les documentations disponibles pour apprendre à piloter le Mirage 2000 C</p>
-                            <div class="center">
-                                <img src="../images/mirage2000c.jpg" alt="Image mirage 2000 c" width="500" height="300">
-                            </div>
-                        </header>
+						<section>
+							<p>Lors de navigations simples ou même pendant les missions, les pilotes ont besoins de transmettre et de recevoir des informations pour prendre leurs décisions
+							par exemple lorsqu'il faut transmettre des coordonnées avec des lettres et des nombres, les aviateurs utilisent <b>l'alphabet phonétique</b> pour éviter les confusions et commettre des erreurs.</p>
+						</section>
                     	<section>
-                            <h2>Les bases</h2>
-                            <a href="les caractéristiques.html" class="carre"> Les caractéristiques </a>
-                            <br>
-                            <a href="le cockpit.html" class="carre"> Le cockpit </a>
-                            <br>
-                            <a href="les procédures.html" class="carre"> Les procédures </a>
+                            <h2>L'Alphabet :</h2>
+                            <img src="../images/alphabet.png" alt="Tableau alphabet" width="600" height="450">
                         </section>
 						<section>
-                            <h2>La navigation</h2>
-                            <a href="#" class="carre"> Le vol à vue </a>
-                            <br>
-                            <a href="#" class="carre"> La centrale inertielle </a>
-                            <br>
-                            <a href="#" class="carre"> Le TACAN </a>
-                            <br>
-                            <a href="#" class="carre"> Les VOR et ILS </a>
-                            <br>
-                            <a href="#" class="carre"> Le ravitaillement </a>
-                            <br>
-                        </section>
-						<section>
-							<h2>Le radar</h2>
-							<a href="#" class="carre"> Le radar</a>
-						</section>
-						<section>
-							<h2>L'armement</h2>
-							<a href="#" class="carre"> Le Air/Sol</a>
-							<br>
-							<a href="#" class="carre"> Le Air/Air</a>
-							<br>
-							<a href="#" class="carre"> Les systèmes de protection</a>
-							<br>
-						</section>
-						<section>
-							<h2>Les pannes</h2>
-							<a href="#" class="carre"> Les pannes moteurs</a>
-							<br>
-							<a href="#" class="carre"> Les pannes de commandes de vol électrique</a>
-							<br>
-							<a href="#" class="carre"> Les pannes hydrauliques </a>
-							<br>
-							<a href="#" class="carre"> Les fuites de carburant </a>
-							<br>
-							<a href="#" class="carre"> Les décrochages</a>
-							<br>
-							<a href="#" class="carre"> Les vrilles </a>
-							<br>
+							<h2>Les chiffres :</h2>	
+							<p>Lorsqu'il s'agit de communiquer les nombres par radio, il y a certaines règles à respecter pour que la transmission soit claire 
+							et quelle soit bien reçu par réceveur. Voici quelques règles :</p>
+							<ol>
+								<li>Les nombres doivent être <b>décomposés en chiffres</b>. Exemple : trois cent vingt devient <em>trois, deux, zéro.</em> 
+								Seulement <span class="tooltip" data-tooltip="C'est le nom que porte un avion lors des communications">les indicatifs </span>
+								n'ont pas besoin d'être dit en chiffres seulement si le langage utilisé est le français</li>
+								<li>Lorsque plusieurs chiffres se suivent, il faut les annoncés <b>un par un</b> et non dire <em>deux fois neuf</em> par exemple.</li>
+								<li>Le chiffre <b>un</b> se dit <em>"unité"</em></li>
+								<li>Lorsqu'il y a une virgule, comme dans les fréquences, il ne faut pas dire <em>"... virgule...." mais <b>"... décimal..."</b></em>.</li>
+								<li>Pour annoncer des chiffres qui sont négatifs, il faut dire <b>"moins"</b> devant le chiffre.</li>
+								<p>Voici un exmple de transmission : <em>, French Air Force douze, autorisé I.L.S piste 25, fréquence unité, unité, neuf décimal huit, cinq, zéro.</em></p>
+							</ol>
+							
 						</section>
                     </div>
 				
