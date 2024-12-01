@@ -1,32 +1,14 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Les phraséologies</title>
+		<title>Les niveaux, Altitude et Hauteurs</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 		<style>
-			.tooltip {
-				position : relative;
-				cursor : pointer;
-			}
-			.tooltip:hover::after{
-				content: attr(data-tooltip);
-				position: absolute;
-				bottom 120%;
-				left: 50%;
-				transform: translateX(-50%);
-				background-color: #333;
-  				color: #fff;
-				padding: 5px;
-				border-radius: 5px;
-				white-space: nowrap;
-				z-index: 1;
-			}
-			
-
-		</style>
+            
+        </style>
 	</head>
 	<body class="is-preload">
 
@@ -64,41 +46,55 @@
                 <!--Main-->
                     <div id="main">
 						<header>
-							<h2>Les phraséologies entre Pilotes et Conctrôleurs</h2>
-							<p>Pour communiquer entre eux, les pilotes et les contrôleurs aériens, aussi appellé ATC pour Air Traffic Conctrol, utilise des phrases
-							claires et présises suivant des réglementations pour se comprendre.</p>
+							<h2>Niveaux, Altitude et Hauteurs</h2>
 						</header>
 						<section>
-							<p>Chaques phases du vol ont leurs propres phraséologies en français.</p>
+							<p>En aéronautique, il y beaucoup de façons différentes de parler de la distance verticale</p>
 							<ul>
-								<li><a href="#contact">Le premier contact</a></li>
-								<li><a href="#route">La mise en route</a></li>
-								<li><a href="#roulage">Le roulage</a></li>
-								<li><a href="#décollage">Le décollage</a></li>
-								<li><a href="#montée">La montée initiale</a></li>
-								<li><a href="#navigation">La navigation</a></li>
-								<li><a href="#mission">La mission</a></li>
-								<li><a href="#approche">L'approche</a></li>
-								<li><a href="#atterrissage">L'atterrissage</a></li>
-								<li><a href="#déconnexion">La déconnexion</a></li>
+								<li><a href="#asfc">La hauteur ;</a></li>
+								<li><a href="#amsl">L'altitude AMSL ;</a></li>
+								<li><a href="#niveaux">Les niveaux de vol ;</a></li>
+								<li><a href="#at">L'altitude de transition ;</a></li>
+								<li><a href="#nt">Le niveau de transition ;</a></li>
 							</ul>
 						</section>
-						<section id="contact">
-							<h3>Le premier contact</h3>
-							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> Tour de contrôle bonjour, ici FAF2612 pour un essai radio.</p>
-							<p><img src="../images/icon_tour_de_contrôle.png" alt="icon" style="width: 20px; height:20px;">FAF2612, bonjour, je vous recoie <span class="tooltip" data-tooltip="5/5 = Récection parfaite alors que 1/5 = Transmission impossible">5/5 </span></p>
+						<section id="asfc">
+							<h3>La hauteur :</h3>
+							<p>Par définition, la hauteur est la variation de distance entre l'aéronef et le sol. Un altimètre calé sur le QFE indique la hauteur. Les abréviations suivantes sont utilisées pour parler d'une hauteur :</p>
+							<ul>
+								<li> AGL (Above Ground Level) -> Au-dessus du sol ;</li>
+								<li> AAL (Above Aerodrome Level) -> Au dessus de l'aéroport.</li>
+							</ul>
 						</section>
-						<section id="route">
-							<h3>La mise en route</h3>
-							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;">FAF2612, un Mirage 2000C, porte 41 pour une mission d'attaque au sol 
-							au secteur LM54, niveau demandé 80, <span class="tooltip" data-tooltip="Cela signifie, que le plan de vol est déjà installé dans l'avion">plan de vol déposé,</span> décollage prévu dans 10min, nous avons l'information Bravo, demandons paramètres de départ.</p>
-							<p><img src="../images/icon_tour_de_contrôle.png" alt="icon" style="width: 20px; height:20px;">FAF2612, C'est copié, mise en route approuvée, prévoyez un départ BUT n°1, niveau initial 70.</p>
-							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;">La mise en route est approuvée, on prévoit un départ par le BUT n°1 avec un niveau initial 70, FAF2612.</p>
-							<p><img src="../images/icon_tour_de_contrôle.png" alt="icon" style="width: 20px; height:20px;">FAF2612, La relecture est correct, rappelez prêt au roulage.</p>
-							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;">On rappelera prêt au roulage FAF2612</p>
+						<section id="amsl">
+							<h3>L'altitude AMSL :</h3>
+							<p>L'altitude est définie comme étant la distance verticale entre l'aéronef et le niveau moyen des mers. Un altimètre calé sur le QNH indique l'altitude.</p>
+							<p>L’abréviation suivante est utilisée pour parler d'une altitude :</p>
+							<ul>
+								<li>AMSL (Abose Mean Sea Level) -> En foncrtion du niveau de la mer principale.</li>
+							</ul>
 						</section>
-						<section id="roulage">
-							<h3>La roulage</h3>
+						<section id="niveaux">
+							<h3>Les niveaux de vol :</h3>
+							<p>Lorsque l'on dépasse l'altitude de 5000ft, on parle alors de niveau. Cela évite les confusions avec les zéros.</p>
+							<p>Par exemple, on ne dit pas <em>altitude 9000 ft</em> mais plutôt <b>niveau 090</b>. L'altitude 30 000 ft est donc le niveau 300.</p>
+						</section>
+						<section id="at">
+							<h3>L'altitude de transition :</h3>
+							<p>Un calage altimétrique commun est nécessaire afin d´établir une séparation verticale entre plusieurs aéronefs. Imaginons un vol entre Paris et New-York. Il est aisé de comprendre que
+							si les vols seraient opérés en utilisant le QNH, ce dernier devrait être transmis fréquemment (car la pression atmsophérique change selon l´endroit) et les fréquences de radiocommunication seraient encombrées.
+							Pour palier à cela, il a été établi une référence au dessus de laquelle tous les aéronefs doivent avoir le même calage altimétrique. Cette référence est appelée : altitude de transition.</p>
+						</section>
+						<section id="nt">
+							<h3>Le niveaux de transition :</h3>
+							<p>L'utilisation du QNH est particulièrement adaptée aux opérations dans les phases terminales (départ, approche, vol proche du relief).</p>
+							<div class="center">
+                                <img src="../images/a1.png" alt="" width="650" height="320">
+							</div>
+							<p><b>Pour résumer :</b></p>
+							<div class="center">
+                                <img src="../images/a2.png" alt="" width="700" height="350">
+							</div>
 						</section>
                     </div>
 				
