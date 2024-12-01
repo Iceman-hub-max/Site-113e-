@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Les METAR / TAF / ATIS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<style>
+            .center{
+                text-align: center;
+            }
+            .carre::before{
+                content:"■";
+                color: black;
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>
+							Voici le 113e
+						</h1>
+						<p>Un serveur discord ayant pour but de réunir une communauté de passioner d'aviation de combat à travers le simulateur <a href="https://www.digitalcombatsimulator.com/fr/"><u><em>DCS WORLD</em></u></a>.</p>
+						<ul class="actions">
+							<li><a href="../#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../index.html" class="logo">Le 113e</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="../index.html">Voici le 113e</a></li>
+							<li class="active"><a href="../Documentation.html">Documentation</a></li>
+                            <li><a href="../Notre équipe.html">Notre équipe</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.instagram.com/113e_escadron_de_robinson/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://discord.gg/vKd7KEbtND" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+						</ul>
+					</nav>
+                <!--Main-->
+                    <div id="main">
+						<section>
+							<p>Ici, vous trouverez tout ce dont vous aurez besoin pour voler en fonction de la météo</p>
+							<p class="carre"><a href="#ATIS"> L'ATIS</a></p>
+							<p class="carre"><a href="#METAR"> Les METAR</a></p>
+							<p class="carre"><a href="#TAF"> Les TAF</a></p>
+						</section>
+						<section id="ATIS">
+							<p><b>L'ATIS (de l'anglais Automatic Terminal Information Service)</b> est un service automatique de diffusion. Il permet aux pilotes de recevoir en continu des informations sur les aéroports les plus fréquentés.</p>
+							<p>Exemple : <em>Ici Aéroport de Bordeaux Mérignac, information Hôtel, enregistrée à 1937 UTC. Approche ILS/DME piste 23. Atterrissage piste 23. Décollage piste 23. Itinéraire de départ prévu 6P, Niveau de transition 60, 
+							Transpondeur sur marche avant le roulage, Vent 260° 08 nœuds. Temps présent CAVOK, Température +12, Point de rosée +10, QNH 1016, Confirmé Hôtel reçu au premier contacte.</em></p>
+						</section>
+						<section id="ATIS">
+							<p><b>Un METAR (METeorological Airport Report)</b>est un message d'observation météorologique pour l'aviation. Ce type de message est élaboré toutes les heures, voir toutes les 30min.</p>
+							<p>Structure du message: </p>
+							<p>La syntaxe des METAR est standardisée afin de permettre une lecture aisée par tous les usagers. Afin de conserver un format concis, des abbréviations sont utilisées afin de traduire les phénomènes météorologiques observés. Ces abbréviations sont majoritairement issues
+							de la langue anglaise mais certaines proviennent du français.</p>
+							<p>La structure est la suivante :</p>
+							<ul>
+								<li>code OACI de l'aéroport</li>
+								<li>date et heure de l'observation (Z=UTC=GMT)</li>
+								<li>direction et force du vent (kt)</li>
+								<li>visibilité (m)</li>
+								<li>portée visuelle sur piste (m)</li>
+								<li>temps présent</li>
+								<li>nuages (ft)</li>
+								<li>température et point de rosée (°C)</li>
+								<li>pression (hPa)</li>	
+								<li>compléments</li>
+							</ul>
+							<p>Les unités renseignées sont celles utilisées le plus souvent en Europe. Selon la région, certaines de ses unités peuvent changer. On utilise par
+							exemple les m/s en Russie, le km/h, le mile américain (SM) et le pouce de mercure (inHg) en Amérique.</p>
+							<h3>Date et heure de l’observation :</h3>
+							<p>132030 = 13e jour du mois ; 20 heure Z et 30 minutes</p>
+							<h3>Visibilité :</h3>
+							<p class="carre"> 9999 → Visibilité supérieur ou égale à 10 km</p>
+							<p class="carre"> 7000 3000 NE → Visibilité de 7000m à 3000 m au NE de l’aérodrome</p>
+							<h3>Portée visuelle sur piste :</h3>
+							<p>Ce groupe est optionnel et généralement transmis lorsque la visibilité est inférieur 1500m. Les abréviations suivantes sont utilisées lorsque les valeurs sont hors des limites des appareils de mesure :</p>
+							<p class="carre"> M: RVR inférieur minimum mesurable par transmissiomètre, généralement 50m</p>
+							<p class="carre"> P: RVR supérieur maximum mesurable par transmissiomètre, généralement 1500m</p>
+							<p>Exemple : <em>R26/M0050 indique que la RVR piste 26 est inférieure à 50 m R26/P1500 indique que la RVR piste 26 est supérieure à 1500m La tendance est signalée lorsque l’écart entre les RVR moyennes des 5 premières et des 5 dernières minutes est ≥100 m :</em></p>
+							<p class="carre"> D : en baisse (DOWN)</p>
+							<p class="carre"> N : sans changement (NEUTRAL)</p>
+							<p class="carre"> U : en hausse (UP)</p>
+							<h3>Temps présent :</h3>
+							<div class="center">
+                                <img src="../images/meteo.png" alt="" width="600" height="300">
+							</div>
+							<h3>Nuages :</h3>
+							<p>Ce groupe renseigne sur la hauteur de base des nuages en centaine de pieds. Lorsque les nuages observés sont des TCU (towering cumulus=cumulus congestus) ou des CB(cumulonimbus), le type de nuage est précisé.
+							La nébulosité est exprimée en fonction de la couverture nuageuse du ciel découpé en octas. Les abréviations suivantes sont utilisées :</p>
+							<p class="carre"> FEW (few) : peu de nuages; 1 à 2 octas</p>
+							<p class="carre"> SCT (scattered) : nuages épars; 3 à 4 octas</p>
+							<p class="carre"> BKN (broken) : nuages fragmentés; 5 à 7 octas</p>
+							<p class="carre"> OVC (overcast) : couvert; 8 octas</p>
+							<h3>Température et point de rosée</h3>
+							<p>Les deux premiers chiffres renseignent sur la température de l'air. Elle est précédée de la lettre M lorsqu'elle est négative.
+							Les deux derniers chiffres renseignent sur la température du point de rosée</p>
+							<h3>Pression atmosphérique</h3>
+							<p>La valeur du QNH est arrondie à l'inférieure.</p>
+							<h3>Compléments</h3>
+							<p>Optionnellement, des renseignements complémentaires sont fournis.</p>
+							<p class="carre"> RETS : (REcent ThunderStorm) : orage récent observé</p>
+							<p class="carre"> WS R26 : WIND SHEAR (cisaillement de vent) piste 26</p>
+						</section>
+						<section id="TAF">
+							<p><b>Un TAF (Terminal Aerodrome Forecast)</b> est une message de prévision météorologique. La période couverte par ces prévisions dépend de différents facteurs
+							tels que les heures d'utilisation de l'aéroport, son importance et de la longueur des vols qui s'y rendent. Un TAF court est émis toutes les 3h et est valide 9h.
+							Un TAF long est émis toutes les 6h et est valide 24h ou 30h. La période couverte par ces prévisions dépend des heures d'utilisation de l'aérodrome, de son importance et de la longueur des vols qui s'y
+							rendent, le tout servant à la planification pour les transporteurs
+							aériens.</p>
+							<h3>FM ("from") :</h3>
+							<p>	Indicateur de début de changement prévu.</p>
+							<p><em>FM 301800 32015KT 4000 SHRA Le 30 du mois</em>, à partir de 18 h 00 UTC, vent 320° 15 kt, visibilité 4000 m, averse de pluie modérée</p>
+							<h3>BECMG ("becoming") :</h3>
+							<p>Indicateur d'évolution régulière ou irrégulière des paramètres, entre les heures indiquées, sur une période de 1 à 4 heures généralement limitée à 2 heures. Sans autre évolution, les conditions restent
+							valables jusqu'à la fin de validité du TAF.</p>
+							<p><em>BECMG 1517/1519 NSC</em>Le 15 du mois, de 17 h 00 UTC à 19 h 00 UTC, les nuages deviendront	non significatifs (NSC).</p>
+							<h3>TEMPO ("temporary") :</h3>
+							<p>Indicateur des fluctuations temporaires d'un ou plusieurs paramètres ; chaque fluctuation durant moins d'une heure et la durée totale de ces fluctuations couvrant moins de la moitié de la période indiquée.</p>
+							<p><em>TEMPO 2623/2702 27015G25KT</em> Temporairement, entre le 26 du mois, 23 h 00 UTC et le 27 du mois, 02 h 00 UTC (durant moins d’une heure) vent 270° 15 kt rafales 25 kt.</p>
+							<h3> PROB ("probability") :</h3>
+							<p>Indicateur de probabilité d’occurrence des phénomènes décrits, suivi de 30 ou 40 pour indiquer 30% (probabilité faible) ou 40% (probabilité modéré). PROB ne peut être suivi que de TEMPO.</p>
+							<p><em>PROB40 TEMPO 2805/2807 0500 FZFG</em> Probabilité d’occurrence modérée des phénomènes « visibilité 500 m » et « brouillard givrant », durant moins d’une heure, entre 05 h 00 et 07 h 00 UTC, le 28 du mois.</p>
+							<h3>Le signe CAVOK</h3>
+							<p>(Cloud And Visibility OK) est renseigné lorsque :</p>
+							<p class="carre"> la visibilité est supérieure ou égale à 10km</p>
+							<p class="carre"> il n'y a pas aucun nuage sous 5000ft AAL ou la différence entre l'altitude minimale de secteur et l'altitude de l'aérodrome (la plus hautes des deux)</p>
+							<p class="carre"> il n'y a pas de CB, ni de TCU</p>
+							<p class="carre"> il n'y a pas de temps significatif</p>
+							<h3>NSC</h3>
+							<p>(No Significant Cloud) : pas de nuage avec base inférieure à la hauteur du CAVOK, ni CB, ni TCU, ni CAVOK BKN020 : base des nuages fragmentés prévue à 2000ft au dessus de l'aérodrome</p>
+							<h3>Températures minimales et maximales :</h3>
+							<p>Ce groupe renseigne sur la température minimale et maximale prévue dans la période couverte par le TAF.</p>
+							<p class="carre"> TN : indicateur de température minimale prévue</p>
+							<p class="carre"> TX : indicateur de température maximale prévue</p>
+							<p class="carre"> M : "moins" si température négative</p>
+							<br>
+							<p>Exemple : <em>TEMPO 2217/2221 BKN013 PROB40 TEMPO 2219/2221 BKN007</em> : il est prévu qu'entre le 22 à 17h00Z et le 22 à 21h00Z, la hauteur de la base des
+							nuages (fragmentés) s'abaisse temporairement à 1300ft. Il est prévu qu'entre le 22 à 19h00Z et le 22 à 21h00Z, la hauteur de la base des nuages (fragmentés) s'abaisse à 700ft temporairement avec une
+							probabilité de 40% (probabilité modérée) </p>
+						</section>
+                    </div>
+				
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Email</h3>
+								<p>escradronrobinson@gmail.com</p>
+							</section>
+							
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.instagram.com/113e_escadron_de_robinson/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://discord.gg/vKd7KEbtND" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
