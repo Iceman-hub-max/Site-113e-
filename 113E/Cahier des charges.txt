@@ -74,6 +74,4 @@ Menu :
     - Disclammer
   - Nous Contacter :
     - Adresse mail
-lien site:
-https://escadron-fr-dcs.netlify.app/
 
