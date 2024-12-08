@@ -24,7 +24,13 @@
 				white-space: nowrap;
 				z-index: 1;
 			}
-			
+			.center{
+                text-align: center;
+            }
+            .carre::before{
+                content:"■";
+                color: black;
+            }
 
 		</style>
 	</head>
@@ -80,7 +86,6 @@
 								<li><a href="#décollage">Le décollage</a></li>
 								<li><a href="#montée">La montée initiale</a></li>
 								<li><a href="#navigation">La navigation</a></li>
-								<li><a href="#mission">La mission</a></li>
 								<li><a href="#approche">L'approche</a></li>
 								<li><a href="#atterrissage">L'atterrissage</a></li>
 								<li><a href="#déconnexion">La déconnexion</a></li>
@@ -93,15 +98,75 @@
 						</section>
 						<section id="route">
 							<h3>La mise en route</h3>
-							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;">FAF2612, un Mirage 2000C, porte 41 pour une mission d'attaque au sol 
-							au secteur LM54, niveau demandé 80, <span class="tooltip" data-tooltip="Cela signifie, que le plan de vol est déjà installé dans l'avion">plan de vol déposé,</span> décollage prévu dans 10min, nous avons l'information Bravo, demandons paramètres de départ.</p>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;">FAF2612, deux Mirage 2000C, porte 41 pour une mission d'attaque au sol 
+							au secteur LM54, niveau demandé 80, <span class="tooltip" data-tooltip="Cela signifie, que le plan de vol est déjà installé dans l'avion">plan de vol déposé,</span> décollage prévu dans 10 min, nous avons l'information Bravo, demandons paramètres de départ.</p>
 							<p><img src="../images/icon_tour_de_contrôle.png" alt="icon" style="width: 20px; height:20px;">FAF2612, C'est copié, mise en route approuvée, prévoyez un départ BUT n°1, niveau initial 70.</p>
 							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;">La mise en route est approuvée, on prévoit un départ par le BUT n°1 avec un niveau initial 70, FAF2612.</p>
 							<p><img src="../images/icon_tour_de_contrôle.png" alt="icon" style="width: 20px; height:20px;">FAF2612, La relecture est correct, rappelez prêt au roulage.</p>
 							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;">On rappelera prêt au roulage FAF2612</p>
 						</section>
 						<section id="roulage">
-							<h3>La roulage</h3>
+							<h3>Le roulage</h3>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, Nous demandons le roulage.</p>
+							<p><img src="../images/icon_tour_de_contrôle.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, roulez au point d'attente A de la piste 07 via N</p>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> On roule au point d'attente A de la piste 07 via N, FAF2612</p>
+						</section>
+						<section id="décollage">
+							<h3>Le décollage</h3>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, nous sommes au point d'attente A de la piste 07, prêt au décollage.</p>
+							<p><img src="../images/icon_tour_de_contrôle.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, piste 07 alignez vous, autorisé au décollage, les vents du 230° pour 10kts</p>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;">On s'aligne piste 07 et on décolle, FAF2612.</p>
+							<p class="carre"> En fonction du trafic présent, l'ATC peut annoncer d'autres procédures :</p>
+							<p class="carre"> Lorsqu'un avion est entrain de décoller :</p>
+							<p><img src="../images/icon_tour_de_contrôle.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, piste 07, alignez-vous et attendez.</p>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> On s'aligne et on attend, FAF2612.</p>
+							<p class="carre"> Lorsqu'un avion est entrain d'atterrir :</p>
+							<p><img src="../images/icon_tour_de_contrôle.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, un C-130 Hercules en final, dérrière, alignez vous et attendez dérrière.</p>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> On a le trafic en visuel, dérrière on s'aligne et on attend dérrière, FAF2612.</p>
+						</section>
+						<section id="montée">
+							<h3>La montée initiale :</h3>
+							<p><img src="../images/icon_tour_de_contrôle.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, montez niveau 100, tournez à gauche au cap 320, vitesse à convenance.</p>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> On monte au niveau 100, on tourne à gauche au cap 100, FAF2612.</p>
+						</section>
+						<section id="navigation">
+							<h3>La navigation :</h3>
+							<p class="carre">Pendant la navigation, il y a seulement des transmissions pour modifier l'altitude, le cap, la vitesse ou alors pour donner des informations trafics. Lorsque le pilote arrive au point précédent le BUT de mission 
+							alors il prévient le contrôlleur. Pendant la phase de mission, le contrôlleur ne donne plus de directives au pilote, seul le pilote contact le contrôleur pour lui 
+							rendre compte de la situation, pour demander des renforts ou s'il y a des complications dans la mission.</p>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, nous arrivons au BUT de mission.</p>
+							<p><img src="../images/icon_tour_de_contrôle.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, c'est copié.</p>
+						</section>
+						<section id="approche">
+							<h3>L'approche :</h3>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, nous demandons un atterrisage sur l'aéroport de Batumi.</p>
+							<p><img src="../images/icon_tour_de_contrôle.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, Batumi se trouve dans vos 3 heures, à 25 NM, 
+							descendez niveau 070, tournez à gauche au cap 080, rappelez en visuel du terrain.</p>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> On descend niveau 070, on tourne à droite au cap 080 et on rappelle visuel sur le terrain, FAF2612.</p>
+							<p class="carre"> C'est à l'ATC de proposer le type d'approche mais c'est au pilote de décider.</p>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, nous avons le terrain en visuel.</p>
+							<p><img src="../images/icon_tour_de_contrôle.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, intégrer la vent arrière main gauche piste 27, rappelez en final piste 27.</p>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> On intégre la vent arrière main gaucge piste 27, rappelerons en final piste 27, FAF2612.</p>
+						</section>
+						<section id="atterrissage">
+							<h3>L'atterrissage :</h3>
+							<p class="carre"> S'il s'agit d'un atterrissage à vue :</p>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, nous sommes en final de la piste 27.</p>
+							<p><img src="../images/icon_tour_de_contrôle.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, vous êtes autorisé à l'atterrisage piste 27, les vents sont du 180° pour 5 kts, rappelez piste dégagée.</p>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> Autorisé atterrissage piste 27, on rappel piste dégagée.</p>
+							<br>
+							<p class="carre"> S'il s'agit d'un atterrissage ILS :</p>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, nous sommes établi ILS piste 27.</p>
+							<p><img src="../images/icon_tour_de_contrôle.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, vous êtes autorisé à l'atterrisage piste 27, les vents sont du 180° pour 5 kts, rappelez piste dégagée.</p>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> Autorisé atterrissage piste 27, on rappel piste dégagée.</p>
+						</section>
+						<section id="déconnexion">
+							<h3>La déconnexion :</h3>
+							<p class="carre">Après avoir atterri, le piste quitte la piste et attend sur un point d'attend, puis il contact l'ATC qui lui donne les directives de roulage jusqu'au parking.</p>
+							<p> Lorsque l'avion est au parking et qu'il éteint son avion, il contact une dérnière fois l'ATC :</p>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, nous sommes prêt à quitter.</p>
+							<p><img src="../images/icon_tour_de_contrôle.png" alt="icon" style="width: 20px; height:20px;"> FAF2612, quittez la fréquence, bonne journée.</p>
+							<p><img src="../images/icon_avion.png" alt="icon" style="width: 20px; height:20px;"> Nous quittons la fréquence, bonne journée, FAF2316.</p>
 						</section>
                     </div>
 				
