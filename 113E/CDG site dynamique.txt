@@ -1,0 +1,13 @@
+Cahier des charges - site dynamique
+
+Chaque utilisateur peut se connecter avec un identifiant et un code prédéfinit.
+Cela lui permettrai d'aller sur une page profile ou il verrait les informations propre à lui même comme : 
+ 
+ - Sa date d'apparition dans le serveur
+ - Son grade actuel
+ - Ses compétences / formations acquises
+ - La liste des grades obtenu avec les dates des promotions
+ - Les éventuelles sanctions avec date et raison
+ - Les avions qu'il pilote
+ - Le nombre d'heure de pilotage
+ - Les détails des missions avec améliorations
