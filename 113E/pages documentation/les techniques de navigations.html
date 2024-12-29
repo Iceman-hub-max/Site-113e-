@@ -1,13 +1,29 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Les techniques de navigation</title>
+		<title>Les plans de vol</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 		<style>
-            
+           .tooltip {
+				position : relative;
+				cursor : pointer;
+			}
+			.tooltip:hover::after{
+				content: attr(data-tooltip);
+				position: absolute;
+				bottom 120%;
+				left: 50%;
+				transform: translateX(-50%);
+				background-color: #333;
+  				color: #fff;
+				padding: 5px;
+				border-radius: 5px;
+				white-space: nowrap;
+				z-index: 1;
+			} 
         </style>
 	</head>
 	<body class="is-preload">
@@ -48,7 +64,70 @@
 					</nav>
                 <!--Main-->
                     <div id="main">
-						
+						<header><h1>Les plans de vol</h1></header>
+						<section>
+							<h2>Introduction</h2>
+							<p>C'est au leader, lors de la création de la mission, de prévoirent le plan de vol le plus optimisé possible.</p>
+							<p>Il doit penser aux critères suivants :</p>
+							<ul>
+								<li>Choix des méthodes de navigation : vol à vue, waypoints, radio-navigation ;</li>
+								<li>Route directe et simplifiée : courte, à proximité d'aéroports de déroutement, repères visuels, espaces aérien protégé ;</li>
+								<li>Altitude : Optimale pour l'objectif, diminuer la consommation de carburant, assurer la discrétion des appareils ;</li>
+								<li>Les emports d'armements : Les missiles, bombes et pods répondant aux besoins de l'objectif ;</li>
+								<li>La consommation : calculer la consommation évolutive de l'avion pour en déduire le volume totale de carburant nécéssaire ;</li>
+								<li>Le temps : Les durées entre chaque points de navigation et la durée totale ;</li>
+								<li>La masse et le centrage de l'avion : calucer la masse évolutive de l'avion pour anticiper les besoins ainsi que les problèmes.</li>
+							</ul>
+						</section>
+						<section>
+							<h2>La variation d'altitude</h2>
+							<p>Voici étapes pour calculer la consommation de l'avion pour monter ou descendre à une altitude avec un angle. Les unités sont entre corchets [].</p>
+							<ol>
+								<li><h3>Calcul de la vitesse verticale : </h3> Vz [m/s] = v[m/s] x sin(angle[°])</li>
+								<li><h3>Calcul du temps :</h3> t[s] = Altitude [m] / Vz [m/s]</li>
+								<li><h3>Cacul de la consommation horaire :</h3> Ch [kg/h] = <span class="tooltip" data-tooltip="Permet d'évaluer l'efficacité et la performance des moteurs d'avions.">TSFC [Kg/N.h] </span>x Poussée [kN] x nombre de moteur</li>
+								<li><h3>Calcul de la consommation totale :</h3> Ct [kg] = Ch [kg/h] x (t [h]/60)</li>
+								<li><h3>Passer d'une masse à un volume :</h3> V = masse volumique [Kg/L] / masse [Kg]</li>
+							</ol>
+						</section>
+						<section>
+							<h2>La navigation</h2>
+							<p>Voici comment calculer la consommation pendant une phase de croisière : </p>
+							<ul>
+								<li><h3>Calcul de la consommation :</h3> C = (TSFC x F x (d/v)) x nombre de moteur</li>
+								<ul>
+									<li>C = consommation en kilogrammes (Kg)
+									<li>TSFC = Performance du moteur en kilogrammes par Newton heure (Kg/N.h)</li>
+									<li>F = Force de poussée en Newton (N)</li>
+									<li>d = distance à parcourir en kilomètres (km)</li>
+									<li>v = vitesse en kilomètres par heure (km/h)</li>	
+								</ul>
+							</ul>
+						</section>
+						<section>
+							<h2>Les durées</h2>
+							<p>Voici comment calculer un temps de trajet entre deux points :</p>
+							<ul>
+								<li>t[s] =v [m/s] / d [m]</li>
+							</ul>
+						</section>
+						<section>
+							<h3>En plus ...</h3>
+							<p>Il faut prévoir 30 min de vol de jour ou 45 min de vol de nuit en plus des données précedentes pour obtenir une marge de sécurité.</p>
+							<p>Il faut également prévoir 10 minutes de roulage. </p>
+							<h3>Quelques données utiles :</h3>
+							<ul>
+								<li>TSFC = 0.6 Kg/N.h</li>
+								<li>Poussée du moteur du mirage en PC = 95.154 N</li>
+								<li>Pousée du moteur du rafale en PC = 75 N</li>
+								<li>La PC représente 110 % de la poussée du moteur</li>
+								<li>Masse volumique du carburant = 0.8 Kg/L</li>
+							</ul>
+
+							<p><i>Les formules ne prennent en compte ni l'altitude ni la force et la direction du vent pour simplifier les calcules.</i></p>
+							<p>Pour le mirage 2000c, en prennant en compte l'altitude : Consommation = -0.057 x altitude + 3173</p>
+							<p>Pour le rafale, en prennant en compte l'altitude : Consommation = -0.055 x altitude + 2940</p>
+						</section>
                     </div>
 				
 				<!-- Footer -->
