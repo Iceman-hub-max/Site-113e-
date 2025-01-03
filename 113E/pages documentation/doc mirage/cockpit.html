@@ -1,0 +1,1061 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Les caractéristiques</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+                <style>
+                .toggle-section {
+                    margin: 10px 0;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                }
+                .triangle {
+                    width: 0;
+                    height: 0;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-top: 10px solid black;
+                    margin-right: 10px;
+                    transition: transform 0.3s ease;
+                }
+                .triangle.open {
+                    transform: rotate(-90deg);
+                }
+                .content {
+                    display: none;
+                    margin: 10px 0 0 20px;
+                }
+                .content img {
+                    margin: 10px;
+                    display: block;
+                }
+                .center{
+                    text-align: center;
+                 }
+        </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>
+							Voici le 113e
+						</h1>
+						<p>Un serveur discord ayant pour but de réunir une communauté de passioner d'aviation de combat à travers le simulateur <a href="https://www.digitalcombatsimulator.com/fr/"><u><em>DCS WORLD</em></u></a>.</p>
+						<ul class="actions">
+							<li><a href="../../#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../../index.html" class="logo">Les caractéristiques du Mirage 2000</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="../../index.html">Voici le 113e</a></li>
+							<li class="active"><a href="../../Documentation.html">Documentation</a></li>
+                            <li><a href="../../Notre équipe.html">Notre équipe</a></li>
+							<li><a href="../../hiérarchie.html"> Hiérarchie</a></li>
+							<li><a href="../../prochainnement.html"> Prochainnement</a></li>
+							<li><a href="../../à propos.html">À propos</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.instagram.com/113e_escadron_de_robinson/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://discord.gg/vKd7KEbtND" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+							<li><a href="https://www.tiktok.com/@113edr?lang=fr" class="icon brands fa-tiktok"><span class="label">TikTok</span></a></li>
+						</ul>
+					</nav>
+                <!--Main-->
+                    <div id="main">
+                        <header>
+                            <h1>Présentation du cockpit</h1>
+                            <p>Sur cette page vous trouverez chaque bouton de disponible sur le mirage 2000 ainsi que tout l'avionique avec leurs explications ce qui vous 
+                            permettera de comprendre le fonctionnement de cet avion. Toutes les informations sont issues du manuel de vol du Mirage 2000-c
+                            par RAZBAM.</p>
+                            
+                            <ol>
+                                <li><a href="#tableau de bord"> Tableau de bord</a></li>
+                                <li><a href="#tableau de bord 2"> Tableau de bord derrière le manche</a></li>
+                                <li><a href="#panneau de gauche"> Panneau et paroi de gauche</a></li>
+                                <li><a href="#panneau de droite"> Panneau et paroi de droite</a></li>
+                            </ol>
+                        </header>
+                        
+                        <section id="tableau de bord">
+                            <h2>Le tableau de bord :</h2>
+                            <div class="center">
+                                <img src="../../images/cockpit/tableau de bord.png" alt="">
+                            </div>
+                        
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>1 - ANÉMOMÈTRE: </span>
+                            </div>
+                            <div class="content">
+                                <p>L'anémomètre e affiche la vitesse de l'avion en noeuds et en mach. L'aiguille tourne
+                                autour du cadran jusqu'à 800 noeuds pendant que le cadran de Mach tourne sous
+                                l'aiguille des noeuds pour afficher le Mach.</p>
+                                <img src="../../images/cockpit/anémomètre.png" alt="" height="200" width="500">
+                            </div>
+                            
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>2 - SÉLECTEUR D'ALTITUDE DU PILOTE AUTOMATIQUE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Permet de mettre une altitude que le pilote automatique suivera lorsqu'il est enclenché.
+                                 Cette altitude est en ft. Le 7 représente l'altitude en niveau de vol.</p>
+                                <img src="../../images/cockpit/sélecteur d'altitude.png" alt="" height="230" width="530">
+                            </div>
+                            
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>3 - VARIOMÈTRE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Affiche la vitesse verticale en pieds par minute.</p>
+                                <img src="../../images/cockpit/variomètre.png" alt="" height="230" width="400">
+                            </div>
+                            
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>4 - COMMANDES ET VOYANTS DU PILOTE AUTOMATIQUE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Le pilote automatique est géré par un sélecteur de mode, un sélecteur d'altitude (ALT
+                                SEL) et trois commandes sur le manche: le bouton de débrayage PA, la détente de
+                                surpassement / veille PA et le chapeau chinois des compensateurs.</p>
+                                <img src="../../images/cockpit/pilote automatique.png" alt="" height="300" width="400" style="float: left; margin-right: 40px;">
+                                <ul>
+                                    <li>1 - Bouton de test : Allume les voyants ;</li>
+                                    <li>2- Bouton d'activation PA : Active le pilote automatique ;</li>
+                                    <li>3- Bouton de maintien d'altitude : Le PA trim l'avion pour garder la même altitude ;</li>
+                                    <li>4 - Bouton de capture d'altitude : Le PA fait monter ou descendre l'avion en fonction de l'altitude rentrée dans 
+                                    le sélecteur d'altitude ;</li>
+                                    <li>5- Non utilisé :</li> 
+                                    <li>6 - Bouton de mode approche ILS : Le PA procède à l'approche et à l'atterrissage de l'avion.</li>
+                                </ul>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>5 - INTERRUPTEUR ANTI VRILLE DES COMMANDES DE VOL:</span>
+                            </div>
+                            <div class="content">
+                                <ul>
+                                    <li>Norm: Commandes de vol électriques en fonction ;</li>
+                                    <li>Vrille: Le pilote a pleine autorité sur les commandes de vol électriques en
+                                    lacet et en roulis et le limiteur d'incidence est désactivé. À n'utiliser qu'en cas
+                                    d'urgence durant une vrille à plat.</li>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>6 - AFFICHEUR DES FRÉQUENCES RADIO:</span>
+                            </div>
+                            <div class="content">
+                                <p>Affiche la fréquence V/UHF sélectionnée de la radio verte en haut et la fréquence UHF de la radio rouge en bas.</p>
+                                <img src="../../images/cockpit/afficheur radio.png" alt="" height="190" width="250">
+                            </div>
+                            
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>7 - VOYANT PRINCIPAL D'ALERTE/AVERTISSEMENT:</span>
+                            </div>
+                            <div class="content">
+                                <p>Voyan bicolore indiaquant une alerte ou un avertissement:</p>
+                                <p>• Voyant ambre: indique un problème ne mettant pas en cause la sécurité de l'avion dans l'immédiat</p>
+                                <p>• Voyant rouge: indique un danger requérant une action immédiate. Lasécurité de l'avion est compromise.</p>
+                            </div>
+                            
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>8 - INDICATEUR D'INCIDENCE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Indique l'incidence actuelle de l'appareil en degrés.</p>
+                                <img src="../../images/cockpit/indicateur d'incidence.png" alt="" height="300" width="300" style="float: left; margin-right: 40px;">
+                                <ul>
+                                    <li>1. Indicateur d'angle de roulis ;</li>
+                                    <li>2. Drapeau “Off” ;</li>
+                                    <li>3. Symbole avion (fixe) ;</li>
+                                    <li>4. Voyant de balise ;</li>
+                                    <li>5. Bille de dérapage ;</li>
+                                    <li>6. Aiguille d'écart de course ;</li>
+                                    <li>7. Aiguille d'écart de plan de descente ;</li>
+                                    <li>8. Bouton N/P (P verrouille l'horizon artificiel pôle sud vers le pilote afin qu'il n'affiche que du noir et ne trouble pas le pilote par de fausses indications) ;</li>
+                                </ul>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>9 - SUPPORT DE VTH:</span>
+                            </div>
+                            <div class="content">
+                                <p>Supporte la VTH et ses commandes.</p>
+                                 <img src="../../images/cockpit/support vth.png" alt="" height="400" width="400" style="float: left; margin-right: 40px;">
+                                 <ul>
+                                    <li>1. INTERRUPTEUR D'ALLÈGEMENT. L'interrupteur d'allègement supprime certains symboles de la VTH pour une meilleure visibilité vers l'avant. Par défaut, il est en position Off </li>
+                                    <li>2. ÉCHELLE D'ENVERGURE CIBLE. Utilisé en combat rapproché pour définir l'envergure de la cible. Les réglages vont de 7 à 40 mètres. Plus d'informations dans AFFICHAGE VTH. </li>
+                                    <li>3. BOUTON EFF. Le bouton EFF est utilisé pour couper temporairement la VTH. Ne fonctionne que pendant l'appui et remet la VTH en vue normale une fois relâché. NON FONCTIONNEL </li>
+                                    <li>4. SÉLECTEUR DE RÉTICULE CANON. NOT FUNCTIONAL ;</li>
+                                    <li>5. COMMANDE DE LUMINOSITÉ. Utilisé pour augmenter ou diminuer la luminosité de la VTH. </li>
+                                    <li>6. BOUTON D'ALIMENTATION. Alimente la VTH. Il a deux positions: fonctionnement normal (premier click droit) et mode test (accessible après un second click droit).</li>
+                                    <li>7. RÉTICULE FIXE DE SECOURS. Utilisé uniquement quand le calculateur de tir est en panne. </li>
+                                    <li>8. AJUSTEMENT DE LA VISÉE. Utilisé pour régler manuellement la déflexion en accord avec les tables balistiques pour la distance souhaitée ;</li>
+                                    <li>9. SÉLECTEUR D'ALTIMÈTRE ET 10 COMMUTATEUR ALTIMÈTRE RADAR. Par défaut, seule l'altitude barométrique, MSL, est affichée, si vous avez besoin de l'AGL, vous devez activer l'altimètre radar:
+                                    Cliquez une fois sur l'interrupteur d'altimètre radar. Le clic suivant activera l'autotest.
+                                    Cliquez sur le sélecteur d'altimètre. Par défaut, il est en position ZB (altitude barométrique). Cliquez une fois pour le mettre en position H (altimètre radar).
+                                    Les altitudes barométrique et radar sont visibles sur la VTH.
+                                    La position SELH affiche la sélection d'altitude minimale sur la VTH, permettant ainsi son réglage par le pilote</li>
+                                </ul>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>10 - G MÈTRE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Indique l'accélération verticale actuelle subie par l'avion en G.</p>
+                            </div>
+
+                            
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>11 - RÉCEPTEUR D'ALERTE RADAR:</span>
+                            </div>
+                            <div class="content">
+                                <p>Affiche tous les émetteurs radar autour de l'avion.</p>
+                                <img src="../../images/cockpit/rwr.png" alt="" height="280" width="300"style="float: left; margin-right: 40px;">
+                                <ul>
+                                    <li>1. ZONE DE MENACE FAIBLE. Toutes les menaces affichées à l'intérieur de cette zone représentent un danger potentiel pour l'avion. Les signaux radar affichés ici sont reconnus comme étant en mode de recherche. Vous devez estimer s'ils sont dangereux ou pas.</li>
+                                    <li>2. ZONE DE MENACE CRITIQUE. Toutes les menaces affichées à l'intérieur de cette zone représentent un danger immédiat pour la sécurité de l'avion parce qu'ils vous verrouillent ou parce que le radar émet des signaux de guidage, ce qui est interprété comme un lancement de missile. Si un radar de missile est détecté, il sera affiché à l'intérieur de cette zone, même s'il ne se dirige pas vers votre avion.</li>
+                                    <li>3. BOUTON DE LUMINOSITÉ. Contrôle la luminosité de l'écran</li>
+                                    <li>4. VOYANTS D'ÉTAT DES SYSTÈMES. Indique si le système associé est alimenté ou actif. Voir ci-dessous pour plus de détails</li>
+                                    <li>V: Allumé, indique que le système de brouillage radar est alimenté et prêt à fonctionner.</li>
+                                    <li>BR: Allumé, indique que le brouilleur radar fonctionne (il émet des signaux de brouillage). BR = Brouillage.</li>
+                                    <li>DA: Allumé, indique que le RWR est sous tension et qu'il fonctionne. </li>
+                                    <li>D2M: Allumé, indique que le système d'alerte de missile fonctionne. Clignotant, indique que le système est alimenté mais pas prêt à fonctionner (précchauffage).</li>
+                                    <li>LL: Allumé, indique que le système de largage de paillettes/leurres thermiques est alimenté et prêt à fonctionner. </li>
+                                </ul>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>12 - VOYANT DE POSTCOMBUSTION: </span>
+                            </div>
+                            <div class="content">
+                                <p>Indique l'utilisation de la postcombustion.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>13 - VOYANT DE DÉMARRAGE MOTEUR: </span>
+                            </div>
+                            <div class="content">
+                                <p>Indique le moteur est en cours de démarrage.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>14 - INSTRUMENTS MOTEUR: </span>
+                            </div>
+                            <div class="content">
+                                <p>Indiquent le régime et la température moteur.</p>
+                                <img src="../../images/cockpit/instruments moteur.png" height="350" wigdt="210" style="float: left; margin-right: 40px;">
+                                <ul>
+                                    <li>1. AIGUILLE DE RÉGIME MOTEUR (N), affiche le régime en % si le moteur est allumé.</li>
+                                    <li>2. AFFICHAGE DU RÉGIME (N), même information mais en valeurs numériques.</li>
+                                    <li>3. INDICATEUR DE TEMPÉRATURE T7, en centaines de degrés Celsius.</li>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </ul>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>15 - DÉBITMÈTRE CARBURANT: </span>
+                            </div>
+                            <div class="content">
+                                <p>Indique le débit instantané de carburant en Kg/min</p>
+                                <img src="../../images/cockpit/débitmètre.png" height="80" wigdt="100">
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>16 - SÉLECTEUR DE BINGO CARBURANT: </span>
+                            </div>
+                            <div class="content">
+                                <p>Ajuste la valeur de l'alerte Bingo</p>
+                                <img src="../../images/cockpit/sélecteur alerte bingo.png" height="150" wigdt="110" style="float: left; margin-right: 40px;">
+                                <ul>
+                                    <li>1. DÉBIT: Affiche la consommation de carburant du moteur en kilogrammes par minute (Kg / min). </li>
+                                    <li>2. SÉLECTEUR DE BINGO CARBURANT: Les molettes sont utilisées pour régler le Bingo carburant qui déclenchera le voyant du panneau d'avertissement.</li>
+                                </ul>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>17 - VOYANTS INCENDIE MOTEUR: </span>
+                            </div>
+                            <div class="content">
+                                <p>Deux voyants indiquent une surchauffe pouvant être causée par un incendie. Ils correspondent respectivement à la partie centrale du moteur et à la tuyère.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>18 - PANNEAU DE COMMANDE CARBURANT:</span>
+                            </div>
+                            <div class="content">
+                                <p> Indique la quantité actuelle de carburant en kg et commande la vanne d'alimentation croisée des réservoirs</p>
+                                <img src="../../images/cockpit/PCC.png" height="450" wigdt="310" style="float: left; margin-right: 40px;">
+                                <ul>
+                                    <li>1. VOYANT DE RAVITAILLEMENT EN VOL: Allumé par l'interrupteur de ravitaillement en vol.</li>
+                                    <li>2. COMPTEUR DE CARBURANT: Affiche la quantité totale de carburant interne. Mesuré par des capteurs placés dans les réservoirs internes (exceptés ceux des ailes, ou elle est estimée par calcul d'après la quantité fuselage et un coefficient multiplicateur).</li>
+                                    <li>3. NIVEAU CARBURANT NOURRICE GAUCHE: Affiche la quantité dans la nourrice gauche.</li>
+                                    <li>4. COMPTEUR DÉ-TOTALISATEUR DE CARBURANT: Affiche le total disponible dans les réservoirs (internes et externes) de l'avion. Ce nombre est obtenu par soustraction de
+                                    la consommation de carburant par rapport au total au démarrage (valeur réglée avant le démarrage du moteur). Dans DCS, le total de départ est automatiquement fixé et remis à zéro en cas de ravitaillement. Aucune action pilote n'est requise</li>
+                                    <li>5. INTERRUPTEUR D'AFFICHAGE DU DETOT: Définit les informations du compteur DETOT. NON FONCTIONNEL</li>
+                                    <li>6. NIVEAU CARBURANT NOURRICE DROITE:Affiche la quantité dans la nourrice droite.</li>
+                                    <li>7. VOYANTS D'ALERTE CARBURANT: Indiquent quand un réservoir est vide (voir page suivante). </li>
+                                    <li>8. COMMANDE DE TRANSFERT DE CARBURANT: Permet le transfert de carburant pour maintenir l'équilibre NON FONCTIONNEL</li>
+                                    <li>9. INTERRUPTEUR DE TEST DE TRANSFERT: Teste le circuit de transfert. NON FONCTIONNEL</li>
+                                </ul>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>19 - IDN:</span>
+                            </div>
+                            <div class="content">
+                                <p>Indicateur de Navigation (HSI).</p>
+                                <img src="../../images/cockpit/idn.png" height="350" wigdt="210" style="float: left; margin-right: 40px;">
+                                <ul>
+                                    <li>1. POINTEUR DE CAP ACTUEL. Le cap actuel de l'avion est lu devant le pointeur</li>
+                                    <li>2. REPÈRE DE CAP SÉLECTIONNÉ POUR LE PILOTE AUTOMATIQUE. Appelé aussi Bug de pilote automatique. Indique le cap utilisé par le pilote automatique. Lorsque la valeur est modifiée, il se déplace le long de l'échelle de cap. Une fois réglé sur la valeur désirée et pilote automatique engagé, l'avion vire jusqu'à ce que le repère et le curseur de cap soient alignés sur la même valeur.
+                                    Cette valeur peut être modifiée par la commande de compensation sur le manche (lorsque le pilote automatique est engagé).</li>
+                                    <li>3. FENÊTRE DE DISTANCE (DME). Affiche la distance en nautiques jusqu'à la référence sélectionnée (source). Voir le tableau ci-dessous. Notez que le chiffre le plus à droite est un dixième de mile. Le drapeau DME s'affiche dans cette fenêtre si aucune donnée n'est disponible.
+                                    L'affichage de la distance sert également pour régler les données VAD.</li>
+                                    <li>4. ROSE DES VENTS. L'échelle va de 001 à 360 avec de longs repères tous les 10 degrés et des plus courts tous les 5 degrés. Les valeurs numériques (en dizaines de degrés) sont tous les 30 degrés (par exemple 18 pour 180°)</li>
+                                    <li>5. FENÊTRE DU DRAPEAU DE VOR. Le relèvement indiqué par la flèche fine (VOR) est soit invalide, soit absent (aucun signal ou défaillance du système). N'en tenez pas compte.</li>
+                                    <li>6. FENÊTRE DU DRAPEAU DE RELÈVEMENT. Le relèvement indiqué par la flèche large/double est soit invalide, soit manquant (pas de signal ou défaillance du système). N'en tenez pas compte.</li>
+                                    <li>7. FENÊTRE DU DRAPEAU DE CAP. L'information de cap n'est pas disponible (panne ou pas de signal). Ne tenez pas compte des informations de cap affichées et utilisez un indicateur différent (VTH, ADI ou compas de secours).</li>
+                                    <li>8. FLÈCHE FINE. Indique la direction d'une référence sélectionnée (source) - qui, dans la plupart des cas, est une station VOR. La seule autre utilisation est le mode TEL, qui n'est pas modélisé dans DCS.</li>
+                                    <li>9. FLÈCHE LARGE, OU DOUBLE AIGUILLE. Donne la direction d'une référence sélectionnée.</li>
+                                    <li>10. BOUTON DE RÉGLAGE DES DONNÉES. En mode VAD, sert à régler une position spécifique à partir d'une balise au sol (relèvement et distance).  </li>
+                                    <li>11. SÉLECTEUR DE MODE IDN. Permet de sélectionner la source de navigation. En tournant le bouton, l'indicateur de source de navigation se déplace sur la position désirée.</li>
+                                    <li>12. INDICATION DU MODE SÉLECTIONNÉ. Le petit demi-cercle sous chaque option indique le mode IDN sélectionné.</li>
+                                </ul>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>20 - VTB:</span>
+                            </div>
+                            <div class="content">
+                                <p>Visualisation tête basse, écran Radar. (HDD)</p>
+                                <img src="../../images/cockpit/vtb.png" height="350" wigdt="210" style="float: left; margin-right: 40px;">
+                                <ul>
+                                    <li>1. ÉLÉVATION DE L'ANTENNE RADAR. Indique l'angle d'élévation de l'antenne vers le haut ouvers le bas. Chaque petite barre représente 10°.</li>
+                                    <li>2. COUVERTURE DE BALAYAGE VERTICAL DU RADAR (BARRES). Indique les réglages du nombre de barres choisis sur le SÉLECTEUR DE BARRES (1, 2 ou 4 lignes). Le repère à gauche du numéro se déplacera vers le haut ou vers le bas le long de l'échelle d'élévation de l'antenne radar, montrant l'angle actuel de l'antenne. notez que lors du réglage une barre, il n'y a pas de numéro, seulement le repère horizontal sur l'échelle d'élévation.</li>
+                                    
+                                    <li>3. VITESSE CONVENTIONNELLE. Indique la CAS en nœuds et en Mach en dessous (nonvisible sur cette capture d'écran).</li>
+                                    <li>4. ÉCHELLE DE CAP. Semblable à celle de la VTH, indique le cap actuel de l'avion. Chaque barre verticale représente 10°, les nombres (12, 15, 18) indiquent le cap (120, 50, 80).</li>
+                                    <li>5. ALTITUDE BAROMÉTRIQUE. Indique l'altitude barométrique actuelle de l'avion (3 chiffres au format xxx, dans ce cas 043 - 43o0 pieds).</li>
+                                    <li>6. SYMBOLE ET ASSIETTE DE L'AVION. Le symbole au milieu est statique et représente votre avion, tandis que les deux longues lignes horizontales bougent pour représenter le roulis et le tangage instantané de l'avion.</li>
+                                    <li>7. DISTANCE DE BALAYAGE RADAR. Indique la portée en nautiques actuellement couverte sur l'écran, réglée par L'INTERRUPTEUR DE PORTÉE RADAR.</li>
+                                    <li>8. FRÉQUENCE DE RÉPÉTITION DES IMPULSIONS. Affiche le mode de fonctionnement actuel du radar, déterminé par la position du COMMUTATEUR DE MODE RADAR. Options possibles: HFR pour haute fréquence // ENT pour entrelacé // BFR pour basse fréquence</li>  
+                                </ul>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>26 - PANNEAUX DE GESTION DE L'ARMEMENT:</span>
+                            </div>
+                            <div class="content">
+                                <p>Composé de deux panneaux de part et d'autre de la VTB.</p>
+                                <ul>
+                                    <li>PCA (Poste de Commande Armement): Ce panneau sélectionne les armes et les paramètres de navigation ainsi que les modes d'affichage de la VTH.</li>
+                                    <li>PPA (Poste de Préparation Armement): Ce panneau détermine comment
+                                    l'armement sélectionné sera utilisé.</li>
+                                </ul>
+                                <img src="../../images/cockpit/pca.png" height="250" wigdt="180" style="float: left; margin-right: 40px;">
+                                <ul>
+                                    <li>1. TOP: GUIDAGE EN VITESSE. Mode de navigation spécial utilisé en conjonction avec (TEMPS DÉSIRÉ SUR CIBLE (MODE RD / TD). Reportez-vous à la section correspondante pour plus d'informations. </li>
+                                    <li>2. POL: MODE POLICE. Le système vous guide vers une cible verrouillée à des fins d'identification. Aucune arme n'est disponible dans ce mode, même si la sécurité armement est levée.</li>
+                                </ul>
+                                <img src="../../images/cockpit/ppa.png" height="250" wigdt="180" style="float: left; margin-right: 40px;">  
+                                <ul> 
+                                    <li>1. SÉLECTEUR DE PYLÔNE MISSILE. Cet interrupteur à trois positions sert à contrôler l'ordre de lancement des missiles super 530D. </li>
+                                    <li>2. PRÉPARATION SUPER 530D. Ce bouton active ou désactive la préparation de tous les missiles super 530D (test intégré) et ainsi permet ou interdit leur utilisation. La préparation est déclenchée soit par la mise sous tension de l'avion, soit en cliquant sur le bouton, soit en sélectionnant le mode lié au missile sur le PCA.</li>
+                                    <li>3. SÉLECTEUR DE TIR DE MISSILE. Ce bouton n'est pas utilisé dans le M-2000c</li>
+                                    <li>4. PRÉPARATION MAGIC II. Ce bouton active ou désactive la préparation de tous les missiles magic II (test intégré & refroidissement du capteur) et ainsi permet ou interdit leur utilisation.</li>
+                                    <li>5. VOYANTS TEST/PRÉSENCE</li>
+                                    <li>6. SÉLECTEUR DE DÉTONATEUR DE BOMBES. Interrupteur à trois positions utilisé pour armer les bombes emportées en sélectionnant le détonateur à activer.</li>  
+                                    <li>7. SÉLECTEUR DU NOMBRE DE BOMBES À LARGUER. Utilisé pour augmenter ou diminuer la quantité de bombes à larguer. Un clic gauche augmente la valeur et un clic droit la diminue.</li>  
+                                    <li>8. SÉLECTEUR D'INTERVALLE DE LARGAGE DES BOMBES. Ce commutateur est utilisé pour augmenter ou diminuer la distance entre chaque largage de bombe. Un clic gauche augmente la valeur et un clic droit la diminue. Cette fonction n'est active que lorsque plusieurs bombes sont larguées simultanément.</li>  
+                                    <li>9. AFFICHAGE DE LA QUANTITÉ SÉLECTIONNÉE. L'écran supérieur indique la quantité de bombes à larguer à chaque déclenchement. Les valeurs sont augmentées ou diminuées par paires: 0, 2, 4, 8, 10. Pour le PPA, 0 équivaut à 1.</li>  
+                                    <li>10. AFFICHAGE DE L'INTERVALLE SÉLECTIONNÉ. L'écran inférieur indique l'intervalle entre les largages de chaque bombe en dizaines de mètres, par exemple: 1 = 10 mètres, 40 = 400 mètres, etc.</li>
+                                    <li>11. SÉLECTEUR DE SALVE. Ce bouton ne s'applique qu'aux armes suivantes: Super 530D, canons DEFA 554 et roquettes. Il permet de sélectionner la manière de tirer les armes à chaque appui sur la détente. </li>
+                                </ul>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>27 - HORIZON ARTIFICIEL DE SECOURS:</span>
+                            </div>
+                            <div class="content">
+                                <p>N'indique que le tangage et le roulis. Il doit être aligné manuellement avant le vol et doit également être alimenté par l'interrupteur HORIZON SECOURS (66).</p>
+                                <img src="../../images/cockpit/has.png" height="150" wigdt="90" style="float: left; margin-right: 40px;">
+                                <ul>
+                                    <li>1. Symbole avion (adjustable).</li>
+                                    <li>2. Drapeau OFF.</li>
+                                    <li>3. Indicateur de roulis.</li>
+                                    <li>4. Bouton de réglage/blocage du symbole avion.</li>
+                                </ul>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>29 - ALTIMÈTRE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Affiche l'altitude barométrique (MSL) en pieds.</p>
+                                <img src="../../images/cockpit/altimètre.png" height="150" wigdt="90" style="float: left; margin-right: 40px;">
+                                <ul>
+                                    <li>1. Aiguille des centaines de pieds </li>
+                                    <li>2. Tambour des milliers de pieds</li>
+                                    <li>3. Bouton de réglage barométrique</li>
+                                    <li>4. Affichage du réglage barométrique (en millibars).</li>
+                                </ul>
+                            </div>
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>30 - BOUTON DE LARGAGE D'URGENCE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Largue la totalité des charges externes à l'exception des missiles Magic.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>31 - INDICATEURS DE POSITION:</span>
+                            </div>
+                            <div class="content">
+                                <p>Indique la position actuelle des surfaces de commande des ailes et de la dérive.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>50 - POIGNÉE PARACHUTE/CROSSE D'ARRÊT:</span>
+                            </div>
+                            <div class="content">
+                                <p>Déploie et relâche le parachute de freinage ou abaisse la crosse d'arrêt d'urgence lorsqu'elle est installée.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>51 - INTERRUPTEUR DE GAIN DES COMMANDES DE VOL ÉLECTRIQUES:</span>
+                            </div>
+                            <div class="content">
+                                <p>Gain automatique normal ou gain fixe de secours des commandes de vol électriques. Lorsqu'il est activé, le mode de gain de secours ne peut plus être annulé pour le reste du vol.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>52 - POIGNÉE DE LARGAGE DE LA VERRIÈRE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Déclenche manuellement le cordon explosif inclus dans le plexiglas de la verrière afin de la briser (le même cordon est automatiquement déclenché dans le cadre de la séquence d'éjection lorsque la poignée d'éjection est tirée).</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>53 - LEVIER DES TRAINS D'ATTERRISSAGE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Active les trains d'atterrissage.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>54 - PANNEAU DES INDICATEURS DE CONFIGURATION:</span>
+                            </div>
+                            <div class="content">
+                                <p>Indique l'état des aérofreins, trains, crosse / parachute, dirigeabilité roues avant et système antiblocage.</p>
+                                <img src="../../images/cockpit/panneau des trains d'atterrissage.png" style="float: left; margin-right: 40px;">
+                                <ul>
+                                    <li>1. AF (abbréviation pour Aéro Freins), Voyants des aérofreins. S'allument lorsque qu'ils sont sortis.</li>
+                                    <li>2. DIRAV (abbréviation pour Dirigeabilité Roue Avant) voyant de signalisation. S'allume lorsque le système DIRAV est engagé. Sachez que la DIRAV se déconnecte automatiquement lorsque la vitesse sol atteint 40 noeuds. </li>
+                                    <li>3. CROSS (Abbréviation pour Crosse) voyant de signalisation.</li>
+                                    <li>4. FREIN voyant de signalisation. S'allume lorsque les freins de roue sont activés ou lorsque le frein de parc est serré. (en plus du voyant PARK sur le panneau d'alarme/avertissement).</li>
+                                    <li>5. SPAD (Système Perfectionné Anti-Dérapant) voyant de signalisation. Il s'allume lorsque l'anti-dérapage est déconnecté ou lorsque son test automatique échoue. Clignote lorsque le train d'atterrissage est en transition.</li>
+                                    <li>6. TRAIN EN TRANSIT voyant de signalisation.</li>
+                                    <li>7. TRAIN SORTI ET VERROUILLÉ voyants de signalisation. S'allument quand les trois trains sont sortis et verrouillés. </li>
+                                </ul>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>55 - LEVIER DE SECOURS DE TRAINS D'ATTERRISSAGE: </span>
+                            </div>
+                            <div class="content">
+                                <p>Abaisse les trains en cas de défaillance du système principal.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>56 - MONTRE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Affiche l'heure ZULU (GMT/UTC).</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>57 - JAUGE D'OXYGÈNE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Indique la quantité d'oxygène restante.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>58 - INTERRUPTEURS DE MISE SOUS TENSION:</span>
+                            </div>
+                            <div class="content">
+                                <p>Active les systèmes électriques de l'avion.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>59 - PANNEAU D'ALERTES/AVERTISSEMENTS:</span>
+                            </div>
+                            <div class="content">
+                                <p>Indique des situations d'urgence ou anormales de l'avion. Associé au voyant d'alerte principal.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>60 - INTERRUPTEUR QRA:</span>
+                            </div>
+                            <div class="content">
+                                <p>(Quick Reaction Alert). Active un réseau électrique spécifique pour garder l'avion prêt à démarrer avec un très court préavis, lorsqu'il est en alerte au sol. NON FONCTIONNEL</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>61 - POIGNÉE DE VERROUILLAGE/DÉVERROUILLAGE DE LA VERRIÈRE: </span>
+                            </div>
+                            <div class="content">
+                                <p>Verrouille et déverrouille la verrière.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>76 - INTERRUPTEUR DE SÉCURITÉ CANONS: </span>
+                            </div>
+                            <div class="content">
+                                <p>Doit être désengagé pour utiliser les canons. </p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>77 - PANNEAU DE COMMANDE DE LA NACELLE ÉCLAIR:</span>
+                            </div>
+                            <div class="content">
+                                <p>Commande la nacelle "ÉCLAIR" et affiche le nombre de contre mesures restantes (paillettes ligne du haut, leurres IR ligne du bas). </p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>81 - COMPAS DE SECOURS: </span>
+                            </div>
+                            <div class="content">
+                                <p>Compas magnétique de réserve non connecté aux autres systèmes de navigation embarqués.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>82 - INTERRUPTEUR DE MODES DE COMMANDES DE VOL ÉLECTRIQUES: </span>
+                            </div>
+                            <div class="content">
+                                <p>Sélectionne le mode de fonctionnement des commandes de vol électriques. </p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>85 - SUPPORT DES JUMELLES DE VISION NOCTURNE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Support de maintien des jumelles de vision nocturne une fois sorties de leur sac sur le panneau droit.</p>
+                            </div>
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>86 - BOITIER "SPIRALE":</span>
+                            </div>
+                            <div class="content">
+                                <p>Elément du système ECM / contre-mesures. Voir SECTION 13 pour plus d'informations.</p>
+                            </div>
+                        </section>
+
+                        <section id="tableau de bord 2">
+                            <h2>Tableau de bord derrière le manche :</h2>
+                            <div class="center">
+                                <img src="../../images/cockpit/tableau de bord derrière le manche.png" alt="">
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>21 - PANNEAU IFF</span>
+                            </div>
+                            <div class="content">
+                                <p>Information Amis/Ennemies.</p>
+                            </div>
+
+                             <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>22 - SÉLECTEUR DE MANOMÈTRE HYDRAULIQUE</span>
+                            </div>
+                            <div class="content">
+                                <p>Sélectionne le circuit un ou deux pour affichage au manomètre hydraulique. NON FONCTIONNEL</p>
+                            </div>
+
+                             <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>23 - MANOMÉTRE DE PRESSION CABINE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Indique la pression cabine en bars</p>
+                            </div>
+
+                             <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>24 - MANOMÈTRE HYDRAULIQUE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Indique la pression du circuit 1 ou 2 en bars S (Servitudes) et FS (Frein Secours) en fonction de la position de l'interrupteur #22.</p>
+                            </div>
+
+                             <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>25 - LEVIER DE RÉGLAGE DU PALONIER:</span>
+                            </div>
+                            <div class="content">
+                                <p>Règle la hauteur des pédales du palonnier.</p>
+                            </div>
+                            
+                        </section>
+
+                        <section id="panneau de gauche">
+                            <h2>Panneau de gauche :</h2>
+                            <div class="center">
+                                <img src="../../images/cockpit/panneau et paroi gauche.png" alt="">
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>32 - COMMUNICATION RADIOS:</span>
+                            </div>
+                            <div class="content">
+                                <p>Deux radios, principale (VHF/UHF) et auxiliaire (UHF). La radio principale est identifiable à son sélecteur manuel de fréquences.</p>
+                                <img src="../../images/cockpit/panneau radio.png" height="250" wigdt="190" style="float: left; margin-right: 40px;">
+                                <ul>
+                                    <li>1. SÉLECTEUR ÉMETTEUR/RÉCEPTEUR UHF. Non utilisé, toujours réglé à 5W, même dans la réalité.</li>
+                                    <li>2. INTERRUPTEUR SIL UHF. Active ou désactive la fonction de suppression automatique du bruit.</li>
+                                    <li>3. SÉLECTEUR DE TEST UHF. NON FONCTIONNEL</li>
+                                    <li>4. SÉLECTEUR DE CANAL PRÉRÉGLÉ UHF. Règle le canal de fréquence préréglé désiré. Passer au canal suivant par un clic droit, au précédent par un gauche.</li>
+                                    <li>5. INDICATEUR DE CANAL UHF. Affiche la fréquence préréglée sélectionnée. 20* préréglages sont disponibles.</li>
+                                    <li>6. SÉLECTEUR DE MODE DE FONCTIONNEMENT UHF. Détermine le mode de fonctionnement radio AR, M, F1 ou H.</li>
+                                    <li>7. VOYANT DE RÉCEPTION UHF CHIFFRÉE. NON FONCTIONNEL</li>
+                                    <li>8. BOUTON DE TEST UHF. Lors de l'appui sur cette touche, si la radio UHF fonctionne, on doit entendre les parasites radio.</li>
+                                    <li>9. SÉLECTEUR DE FONCTION V/UHF. Ce sélecteur de fonction à sept positions détermine le mode de fonctionnement de la radio.</li>
+                                    <li>10. BOUTON MEM/CLR. Affiche le contenu de la mémoire tampon (peut être un canal ou une fréquence).</li>
+                                    <li>11. ÉCRAN DE LA RADIO V/UHF. Affichage numérique indiquant le canal ou la fréquence préréglée actuellement sélectionnée.</li>
+                                    <li>12. BOUTON XFR / VAL. XFR (TRANSFERT) permet de revenir au canal ou à la fréquence utilisé précédemment.</li>
+                                    <li>13. SÉLECTEUR DE CANAL V/UHF PRÉSELECTIONNÉ. Règle le canal V/UHF présélectionné souhaité.</li>
+                                    <li>14. BOUTON CONFIGURATION. Remplace les chiffres sur le clavier par des options.</li>
+                                    <li>15. CLAVIER V/UHF. Permet de choisir un canal préréglé (à la place du bouton de sélection, deux chiffres acceptés), de saisir manuellement une fréquence (cinq chiffres acceptés) ou de modifier différents paramètres après avoir appuyé sur le bouton CONF.</li>
+                                </ul>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>33 - INTERRUPTEUR ANTIBLOCAGE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Active/désactive le système antiblocage des roues.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>34 - PANNEAU DE COMMANDE RADAR:</span>
+                            </div>
+                            <div class="content">
+                                <p>Commande et configure les paramètres opérationnels du Radar.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>35 - BOUTON D'ARRÊT MOTEUR:</span>
+                            </div>
+                            <div class="content">
+                                <p>Permet à la manette des gaz d'être reculée de la position ralenti à la position stop.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>36 - PANNEAU DE COMMANDE AUDIO:</span>
+                            </div>
+                            <div class="content">
+                                <p>Commande le volume des composants suivants: Communication radios, TACAN, VOR/ILS, balises, tonalité de recherche et de verrouillage des Magic.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>37 - PANNEAU DES COMPENSATEURS:</span>
+                            </div>
+                            <div class="content">
+                                <p>Commandes de secours des compensateurs de tangage et de roulis (surpasse les commandes du manche) et de lacet.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>38 - SYSTÈME DE LUBRIFICATION DE SECOURS:</span>
+                            </div>
+                            <div class="content">
+                                <p>Active/désactive le système de lubrification de secours.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>39 - INTERRUPTEUR CALC:</span>
+                            </div>
+                            <div class="content">
+                                <p>Active le calculateur de secours en cas de panne du principal. C'est un système de "retour à la maison". L'interrupteur CALC est en relation avec le calculateur moteur.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>40 - INTERRUPTEUR DE VIDANGE CARBURANT:</span>
+                            </div>
+                            <div class="content">
+                                <p>Vidange du carburant des réservoirs externes (si montés).</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>41 - PANNEAU DE TEST DES CDVE ET DU PILOTE AUTOMATIQUE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Permet de tester les commandes électriques et le pilote automatique. Doit être effectué après le démarrage moteur et avant le vol. </p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>42 - CANAL DE SECOURS DES CDVE (CDVE 5):</span>
+                            </div>
+                            <div class="content">
+                                <p>Le canal de secours des commandes électriques est un système de dernier recours en cas de défaillance totale des commandes électriques. L'avion est mis en condition de "retour au bercail". Ne pas utiliser pour le vol normal.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>43 - INTERRUPTEUR DE COUPURE DE POSTCOMBUSTION: </span>
+                            </div>
+                            <div class="content">
+                                <p> Désactive la postcombustion en cas de panne de la manette des gaz.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>44 - INTERRUPTEUR D'ÉMISSION RADAR: </span>
+                            </div>
+                            <div class="content">
+                                <p>Utilisé par le personnel d'entretien seulement. Il surpasse le système de sécurité empêchant le radar d'émettre au sol.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>45 - INTERRUPTEUR DU MAGNÉTOPHONE: </span>
+                            </div>
+                            <div class="content">
+                                <p>Se passe d'explications. Oui, le M-2000C utilise de vieilles bandes magnétiques. </p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>46 - INTERRUPTEUR DE REDÉMARRAGE EN VOL:</span>
+                            </div>
+                            <div class="content">
+                                <p>Se passe aussi d'explications.</p>
+                            </div>
+                            
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>47 - MANETTE DE SECOURS</span>
+                            </div>
+                            <div class="content">
+                                <p>Seconde manette des gaz, utilisée en secours. </p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>48 - PANNEAU DES SURFACES DE COMMANDES:</span>
+                            </div>
+                            <div class="content">
+                                <p>Commande les surfaces de controles automatiques.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>49 - PANNEAUX DES FEUX EXTÉRIEURS: </span>
+                            </div>
+                            <div class="content">
+                                <p>Ensemble d'interrupteurs pour les feux de navigation, les feux stroboscopiques anti collision et les feux de formation.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>78 - INTERRUPTEUR DE RAVITAILLEMENT EN VOL: </span>
+                            </div>
+                            <div class="content">
+                                <p>Ouvre la valve et commande l'éclairage durant le ravitaillement en vol.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>80 - PANNEAU DE COMMANDE OXYGÈNE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Commande le débit et la dilution de l'oxygène utilisé. NON FONCTIONNEL</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>83 - INTERRUPTEUR DES PHARES D'ATTERRISSAGE ET DE POLICE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Utilisé pour allumer les phares d'atterrissage et de police.</p>
+                            </div>
+
+                        </section>
+
+                        <section id="panneau de droite">
+                            <h2>Panneau de droite :</h2>
+                            <div class="center">
+                                <img src="../../images/cockpit/panneau et paroi droite.png" alt="">
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>62 - INTERRUPTEUR DE POMPE HYDRAULIQUE DE SECOURS:</span>
+                            </div>
+                            <div class="content">
+                                <p>Active/désactive la pompe hydraulique de secours. Trois positions: Off – Auto – Forcée On (instable).</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>63 - INTERRUPTEUR D'ALERTE AUDIO:</span>
+                            </div>
+                            <div class="content">
+                                <p>Active/désactive les alertes audio de l'avion. Il n'a pas d'effets sur celles des trains, de l'incidence et des missiles.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>64 - INTERRUPTEUR DE DÉGIVRAGE DES SONDES:</span>
+                            </div>
+                            <div class="content">
+                                <p>Active et désactive le dégivrage du Pitot, des sondes statiques et d'incidence.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>65 - PANNEAU TACAN:</span>
+                            </div>
+                            <div class="content">
+                                <p>Commande la radio TACAN</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>66 - INTERRUPTEUR D'HORIZON ARTIFICIEL DE SECOURS (GCS):</span>
+                            </div>
+                            <div class="content">
+                                <p>Active l'horizon artificiel et/ou le gyro compas de secours pour fournir des données au système de navigation en cas de panne de l'UNI.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>67 - PANNEAU DE COMMANDE DE CLIMATISATION:</span>
+                            </div>
+                            <div class="content">
+                                <p>Commande le système de climatisation du cockpit et des instruments.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>68 - DISJONCTEURS:</span>
+                            </div>
+                            <div class="content">
+                                <p> Disjoncteurs électriques.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>69 - PANNEAU DE DÉMARRAGE MOTEUR:</span>
+                            </div>
+                            <div class="content">
+                                <p>Commande des pompes d'alimentation moteur et du système de démarrage. Comporte également le robinet coupefeu.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>70 - PANNEAU DE L'ÉCLAIRAGE INTÉRIEUR:</span>
+                            </div>
+                            <div class="content">
+                                <p>Commande le système d'éclairage intérieur. </p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>71 - PANNEAU UNI PSM/MIP:</span>
+                            </div>
+                            <div class="content">
+                                <p>Commande le fonctionnement de l'UNI. Comporte également le connecteur de cartouche de données de navigation.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>72 - PANNEAU VOR/ILS:</span>
+                            </div>
+                            <div class="content">
+                                <p>Commande la radio VOR/ILS. </p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>73 - PANNEAU DE GUERRE ÉLECTRONIQUE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Commande le RWR, brouilleur, détecteur de départ missile et le fonctionnement des paillettes et leurres IR. </p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>74 - PANNEAU RADAR IFF:</span>
+                            </div>
+                            <div class="content">
+                                <p>Commande le système Radar d'interrogation IFF.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>75 - PANNEAU PCN:</span>
+                            </div>
+                            <div class="content">
+                                <p>Affiche et permet d'entrer les données du système UNI. </p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>79 - RÉGLAGE DE LA HAUTEUR DU SIÈGE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Utilisé pour monter ou baisser le siège.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>84 - FREIN DE PARC:</span>
+                            </div>
+                            <div class="content">
+                                <p>Active/désactive le frein de parc au sol.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>87 - SAC DES JUMELLES DE VISION NOCTURNE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Housse de rangement des jumelles de vision nocturne lorsqu'elles ne sont pas utilisées. Doit être installé par le chef d'équipe.</p>
+                            </div>
+
+                            <div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span>88 - INTERRUPTEUR DE FILTRAGE DE LA LUMIÈRE POUR LES JUMELLES DE VISION NOCTURNE:</span>
+                            </div>
+                            <div class="content">
+                                <p>Active ou désactive le filtre rendant les panneaux d'instruments lisibles avec les JVN.</p>
+                            </div>
+
+                        </section>
+
+                    </div>
+                   				
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Email</h3>
+								<p>escradronrobinson@gmail.com</p>
+							</section>
+							
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.instagram.com/113e_escadron_de_robinson/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://discord.gg/vKd7KEbtND" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
+									<li><a href="https://www.tiktok.com/@113edr?lang=fr" class="icon brands fa-tiktok"><span class="label">TikTok</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+             <script>
+                function toggleContent(element) {
+                    const triangle = element.querySelector('.triangle');
+                    const content = element.nextElementSibling;
+
+                    triangle.classList.toggle('open');
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                }
+            </script>
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>
