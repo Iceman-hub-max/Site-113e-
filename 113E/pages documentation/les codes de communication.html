@@ -13,7 +13,21 @@
             .carre::before{
                 content:"■";
                 color: black;
-            } 
+            }
+
+			table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+			}
+			th, td {
+				border: 1px solid black;
+				text-align: center;
+				padding: 8px;
+			}
+			th {
+				background-color: #f2f2f2;
+			}
         </style>
 	</head>
 	<body class="is-preload">
@@ -50,6 +64,7 @@
 						<ul class="icons">
 							<li><a href="https://www.instagram.com/113e_escadron_de_robinson/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="https://discord.gg/vKd7KEbtND" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+							<li><a href="https://www.tiktok.com/@113edr?lang=fr" class="icon brands fa-tiktok"><span class="label">TikTok</span></a></li>
 						</ul>
 					</nav>
                 <!--Main-->
@@ -59,41 +74,154 @@
 							<p>Le Leader utilise des codes de communications étant des mots clés pour annoncer une action rapidement lors de phases critique de la mission. Voici les principaux :</p>
 						</header>
 						<section>
-							<ul>
-								<li>Roulage = Indique le début de la phase de roulage.</li>
-								<li>Stop = Indique l'arrêt des aéronefs.</li>
-								<li>Alignement formation échalonnée = Indique que les avions s"alignent sur la piste en formation.</li>
-								<li>PC ON/OFF = Indique que les pilotes doivent mettre/couper la post combustion.</li>
-								<li>Top = Indique le début d'une action.</li>
-								<li>Rotation = Indique aux pilotes de décoller.</li>
-								<li>Train ON/OFF = Indique que les pilotes doivent étendre/renter le train d'atterrissage.</li>
-								<li>Volet ON/OFF = Indique que les pilotes doivent étendre/renter les volets.</li>
-								<li>Copy = Indique que l'information donnée est copiée.</li>
-								<li>Roger = Indique que l'information a été prit en compte.</li>
-								<li>Wilco = Indique que l'information sera prit en compte.</li>
-								<li>Affirm = Indique une réponse positive.</li>
-								<li>Négatif = Indique une réponse négative.</li>
-								<li>Stanbye = Indique le silence dans la fréquence.</li>
-								<li>Breack Breack = Indique de casser la formation.</li>
-								<li>Take over = Indique de reprendre la formation.</li>
-								<li>Breack UP/DOWN/RIGHT/LEFT = Indique de monter ou de décendre, de tournez à droite ou à gauche.</li>
-								<li>Fight on = Indique le début du combat.</li>
-								<li>Fox 1 = Indique le tir d'un missile du type FOX 1.</li>
-								<li>Fox 2 = Indique le tir d'un missile du type FOX 2.</li>
-								<li>Fox 3 = Indique le tir d'un missile du type FOX 3.</li>
-								<li>Bomb away = Indique le largage de bombes.</li>
-								<li>Rockets away = Indique le tir de rochettes.</li>
-								<li>Splash = Indique la confirmation que la cible est détruite.</li>
-								<li>Flaire = Indique que l'on se défent avec des contres mesures.</li>
-								<li>Visual = Indique que l'on a un visuel sur l'allié.</li>
-								<li>Blind = Indique que l'on n'a plus de visuel sur l'alliée.</li>
-								<li>Tally = Indique que l'on a un visuel sur la cible.</li>
-								<li>No joy = Indique que l'on n'a pas de visuel sur la cible.</li>
-								<li>Terminate = Indique que le combat est fini.</li>
-								<li>Request terminate = Indque que l'on demande la fin du combat.</li>
-								<li>No kit off = Indique un problème de sécurité.</li>
-								<li>Report back = Indique que les pilotes doivent rendre compte de leur situation.</li>
-							</ul>
+						 <table>
+								<thead>
+									<tr>
+										<th><h2>Codes</h2></th>
+										<th><h2>Significaction</h2></th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- Générer 34 lignes -->
+									<!-- Ligne 1 -->
+									<tr>
+										<td>Roulage </td>
+										<td>Indique le début de la phase de roulage.</td>
+									</tr>
+									<!-- Ligne 2 -->
+									<tr>
+										<td>Stop</td>
+										<td>Indique l'arrêt des aéronefs.</td>
+									</tr>
+									<!-- Ajoutez ici les autres lignes -->
+									<!-- Ligne 34 -->
+									<tr>
+										<td>Alignement formation échalonnée</td>
+										<td>Indique que les avions s"alignent sur la piste en formation.</td>
+									</tr>
+									<tr>
+										<td>PC ON/OFF</td>
+										<td>Indique que les pilotes doivent mettre/couper la post combustion.</td>
+									</tr>
+									<tr>
+										<td>Top</td>
+										<td>Indique le début d'une action.</td>
+									</tr>
+									<tr>
+										<td>Rotation</td>
+										<td>Rotation = Indique aux pilotes de décoller.</td>
+									</tr>
+									<tr>
+										<td>Train ON/OFF</td>
+										<td>Indique que les pilotes doivent étendre/renter le train d'atterrissage.</td>
+									</tr>
+									<tr>
+										<td>Volet ON/OFF</td>
+										<td>Indique que les pilotes doivent étendre/renter les volets.</td>
+									</tr>
+									<tr>
+										<td>Copy</td>
+										<td>Indique que l'information donnée est prise en compte.</td>
+									</tr>
+									<tr>
+										<td>Roger</td>
+										<td>Indique que l'information a été prit en compte et est executée.</td>
+									</tr>
+									<tr>
+										<td>Wilco</td>
+										<td> Indique que l'information est prise en compte et sera executée.</td>
+									</tr>
+									<tr>
+										<td>Affirm</td>
+										<td>oui</td>
+									</tr>
+									<tr>
+										<td>Négatif</td>
+										<td>non</td>
+									</tr>
+									<tr>
+										<td>Stanbye</td>
+										<td>Attendez</td>
+									</tr>
+									<tr>
+										<td>Breack Breack</td>
+										<td>Indique de casser la formation.</td>
+									</tr>
+									<tr>
+										<td>Take over</td>
+										<td>Indique de reprendre la formation.</td>
+									</tr>
+									<tr>
+										<td>Breack UP/DOWN/RIGHT/LEFT</td>
+										<td>Indique de monter ou de décendre, de tournez à droite ou à gauche.</td>
+									</tr>
+									<tr>
+										<td>Fight on</td>
+										<td>Indique le début du combat.</td>
+									</tr>
+									<tr>
+										<td>Fox 1</td>
+										<td>Indique le tir d'un missile du type FOX 1.</td>
+									</tr>
+									<tr>
+										<td>Fox 2</td>
+										<td>Indique le tir d'un missile du type FOX 2.</td>
+									</tr>
+									<tr>
+										<td>Fox 3</td>
+										<td>Indique le tir d'un missile du type FOX 3.</td>
+									</tr>
+									<tr>
+										<td>Bomb away</td>
+										<td>Indique le largage de bombes.</td>
+									</tr>
+									<tr>
+										<td>Rockets away</td>
+										<td>Indique le tir de rochettes.</td>
+									</tr>
+									<tr>
+										<td>Splash </td>
+										<td>Indique la confirmation que la cible est détruite.</td>
+									</tr>
+									<tr>
+										<td>Flaire</td>
+										<td>Indique que l'on se défent avec des contres mesures.</td>
+									</tr>
+									<tr>
+										<td>Visual</td>
+										<td>Indique que l'on a un visuel sur l'allié.</td>
+									</tr>
+									<tr>
+										<td>Blind</td>
+										<td>Indique que l'on a un visuel sur l'allié.</td>
+									</tr>
+									<tr>
+										<td>Tally</td>
+										<td>Indique que l'on a un visuel sur la cible.</td>
+									</tr>
+									<tr>
+										<td>No joy</td>
+										<td>Indique que l'on n'a pas de visuel sur la cible.</td>
+									</tr>
+									<tr>
+										<td>Terminate</td>
+										<td>Indique que le combat est fini.</td>
+									</tr>
+									<tr>
+										<td>Request terminate</td>
+										<td>Indique que l'on demande la fin du combat.</td>
+									</tr>
+									<tr>
+										<td>No kit off</td>
+										<td>Indique un problème de sécurité.</td>
+									</tr>
+									<tr>
+										<td>Report back</td>
+										<td>Indique que les pilotes doivent rendre compte de leur situation.</td>
+									</tr>
+								</tbody>
+							</table>
+
 						</section>
                     </div>
 				
@@ -110,6 +238,7 @@
 								<ul class="icons alt">
 									<li><a href="https://www.instagram.com/113e_escadron_de_robinson/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="https://discord.gg/vKd7KEbtND" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
+									<li><a href="https://www.tiktok.com/@113edr?lang=fr" class="icon brands fa-tiktok"><span class="label">TikTok</span></a></li>
 								</ul>
 							</section>
 						</section>
