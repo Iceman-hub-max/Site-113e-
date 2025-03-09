@@ -6,12 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
-        <style>
-            table {
-                width: 70%;
-                border-collapse: collapse;
-            }
-        </style>
+        
 	</head>
 	<body class="is-preload">
 
@@ -41,18 +36,93 @@
 							<li class="active"><a href="../../Documentation.html">Documentation</a></li>
                             <li><a href="../../Notre équipe.html">Notre équipe</a></li>
 							<li><a href="../../hiérarchie.html"> Hiérarchie</a></li>
-							<li><a href="../../prochainnement.html"> Prochainnement</a></li>
+							<li><a href="../../prochainnement.html"> Calendrier</a></li>
 							<li><a href="../../à propos.html">À propos</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="https://www.instagram.com/113e_escadron_de_robinson/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.twitch.tv/shynix_300iq" class="icon brands fa-twitch"><span class="label">Twitch</span></a></li>
+							<li><a href="#" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
 							<li><a href="https://discord.gg/vKd7KEbtND" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
 							<li><a href="https://www.tiktok.com/@113edr?lang=fr" class="icon brands fa-tiktok"><span class="label">TikTok</span></a></li>
 						</ul>
 					</nav>
                 <!--Main-->
                     <div id="main">
-                        
+                        <header><h1>Le TACAN</h1></header>
+						<section>
+							<p>Le TACAN (Tactical Air Navigation System) est un système de navigation radio utilisé dans le Mirage 2000C pour se guider vers des stations terrestres 
+							ou des aéronefs équipés du même système. Voici un guide détaillé pour son emploi dans DCS.</p>
+						</section>
+						<section>
+							<h2>Présentation du TACAN</h2>
+							<p>Le TACAN fournit deux informations principales :</p>
+							<ol>
+								<li>Direction vers la station ou l'aéronef cible.</li>
+								<li>Distance en miles nautiques (NM) entre votre appareil et le TACAN.</li>
+							</ol>
+						</section>
+						<section>
+							<h2>Interface TACAN</h2>
+							<p>Le système TACAN est géré depuis deux emplacements dans le cockpit :</p>
+							<ol>
+								<li>Panel TACAN : Situé sur la console gauche.</li>
+								<li>Affichage sur le HUD et l'écran ALPHA du PCN.</li>
+							</ol>
+							<p>Éléments du panneau TACAN :</p>
+							<ul>
+								<li><b>OFF :</b> Désactive le TACAN.</li>
+								<li><b>REC :</b> Permet de recevoir uniquement la direction.</li>
+								<li><b>TR :</b> Active la réception de la direction et de la distance (mode standard).</li>
+								<li><b>AA TR :</b> Mode Air-Air pour suivre un autre aéronef équipé TACAN.</li>
+								<li><b>Sélecteur de canal :</b> Permet de sélectionner une fréquence (1 à 126) avec les commutateurs rotatifs.</li>
+								<li><b>X/Y :</b> Sélecteur pour le sous-canal (X ou Y).</li>
+							</ul>
+						</section>
+						<section>
+							<h2>Configuration du TACAN</h2>
+							<p>Étapes pour configurer et utiliser le TACAN :</p>
+							<ol>
+								<li>Tourner le sélecteur de mode sur TR pour une utilisation classique (ou AA TR pour le mode Air-Air).</li>
+								<li>Utiliser les commutateurs rotatifs pour entrer le numéro du canal TACAN.</li>
+								<li>Ajuster le sélecteur sur X ou Y selon la fréquence de la station cible. (Les fréquences TACAN sont généralement fournies dans le briefing de mission ou accessibles via la carte F10).</li>
+								<li>Une fois configuré, la direction apparaîtra sur le VTH, et la distance sera affichée sur l’écran ALPHA du PCN.</li>
+							</ol>
+						</section>
+
+						<section>
+							<h2>Utilisation du TACAN en vol</h2>
+							<p>Navigation vers une station TACAN terrestre :</p>
+							<ol>
+								<li>Configurez le TACAN pour le canal de la station terrestre.</li>
+								<li>Mettez votre IDN sur le mode TCN.</li>
+								<li>Une flèche sur la boussole indique la direction de la station.</li>
+								<li>Suivez cette flèche pour vous orienter vers la station.</li>
+							</ol>
+							<p>Ravitaillement Air-Air avec le TACAN</p>
+							<ol>
+								<li>Configurez le canal TACAN de l’aéronef ravitailleur (indiqué dans le briefing de mission).</li>
+								<li>Sélectionnez le mode AA TR.</li>
+								<li>Une flèche sur le HUD indique la direction du ravitailleur.</li>
+								<li>La distance s’affiche sur le PCN pour vous aider à vous rapprocher.</li>
+							</ol>
+						</section>
+
+						<section>
+							<h2>Modes Spéciaux</h2>
+							<p>Mode REC (Reception Only) :</p>
+							<ul>
+								<li>Utile si vous ne voulez recevoir que la direction de la station sans calcul de distance.</li>
+							</ul>
+							<p>Mode AA TR (Air-Air):</p>
+							<ul>
+								<li>Sert à localiser un autre aéronef équipé TACAN, souvent utilisé pour suivre un leader ou un ravitailleur.</li>
+							</ul>
+							<p>Mode VAD (Vecteur Additionnel dans l'IDN):</p>
+							<p>Permet de se diriger vers un point en utilisant le TACAN comme intermédiaire voir schéma ci-dessous</p>
+							<img src="../../images/VAD.png" width="700" height="300">
+							<p>Il suffit d'entrer dans le menu θ dans l'IDN, le relèvement magnétique par rapport au nord de la route entre le TACAN et le VAD puis il faut rentrer dans le menu 
+							ρ la distance entre le TACAN et le VAD.</p>
+						</section>
                     </div>
 
 				

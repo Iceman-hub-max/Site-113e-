@@ -41,18 +41,103 @@
 							<li class="active"><a href="../../Documentation.html">Documentation</a></li>
                             <li><a href="../../Notre équipe.html">Notre équipe</a></li>
 							<li><a href="../../hiérarchie.html"> Hiérarchie</a></li>
-							<li><a href="../../prochainnement.html"> Prochainnement</a></li>
+							<li><a href="../../prochainnement.html"> Calendrier</a></li>
 							<li><a href="../../à propos.html">À propos</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="https://www.instagram.com/113e_escadron_de_robinson/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.twitch.tv/shynix_300iq" class="icon brands fa-twitch"><span class="label">Twitch</span></a></li>
+							<li><a href="#" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
 							<li><a href="https://discord.gg/vKd7KEbtND" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
 							<li><a href="https://www.tiktok.com/@113edr?lang=fr" class="icon brands fa-tiktok"><span class="label">TikTok</span></a></li>
 						</ul>
 					</nav>
                 <!--Main-->
                     <div id="main">
-                        
+                        <header>
+							<h1>La centrale inertielle</h1>
+							
+						</header>
+						<section>
+							<p>La centrale inertielle est une méthode de navigation utilisant des données géographiques rentrées au préalable ou bien en vol.
+							Cette méthode est utilisée lorsque la météo et défavorable, que les points visuels sont trop espacés entre eux ou bien que la navigation sera longue et impécise.</p>
+
+						</section>
+						<section>
+							<h2>Interface de la Centrale Inertielle</h2>
+							<h3>Composants du PCN :</h3>
+							<p>Sélecteurs de Mode :</p>
+							<ul>
+								<li><b>PREP :</b> Préparation d’un waypoint.</li>
+								<li><b>INS :</b> Navigation active.</li>
+								<li><b>BAD :</b> Points d'intérêt balistiques ou de repère.</li>
+								<li><b>DEST :</b> Sélection d’un waypoint actif.</li>
+							</ul>
+							<p>Clavier Numérique : Pour entrer les coordonnées et autres paramètres.</p>
+							<p>Écran ALPHA : Affiche les informations des waypoints, positions, distances, etc.</p>
+							<p>Bouton VAL : Valider une entrée.</p>
+							<p>Sélecteur de Mode de l’INS : Contrôle l’état d’alignement et de navigation.</p>
+						</section>
+						<section>
+							<h2>Alignement de la Centrale Inertielle</h2>
+							<h3>Étapes d’alignement :</h3>
+							<ol>
+								<li>Allumer l’INS :</li>
+								<ul>
+									<li>Tourner le sélecteur de mode INS sur ALN.</li>
+								</ul>
+								<li>Entrer la position initiale :</li>
+								<ul>
+									<li>Basculer le PCN en mode PREP.</li>
+									<li>Taper le code "00" (position initiale).</li>
+									<li>Entrer les coordonnées de l’aérodrome à l'aide du clavier numérique (latitude, longitude et altitude).</li>
+									<li>Appuyer sur VAL pour confirmer.</li>
+								</ul>
+								<li>Attendre l’alignement complet :</li>
+								<ul>
+									<li>L'écran ALPHA affiche le statut de l'alignement. Attendre qu'il passe en ALIGNÉ ou QUAL 9.</li>
+								</ul>
+								<li>Passer en mode NAV :</li>
+								<ul>
+									<li>Tourner le sélecteur de mode INS sur NAV une fois l’alignement terminé.</li>
+								</ul>
+							</ol>
+							<p>⏳ Temps d’alignement : Environ 8 minutes pour un alignement complet. (Peut être réduit en alignement rapide, mais moins précis).</p>
+						</section>
+						<section>
+							<h2>Navigation en Vol</h2>
+							<ol>
+								<li>Sélectionner un waypoint actif</li>
+								<ul>
+									<li>Basculer le PCN en mode DEST</li>
+									<li>Entrer le numéro du waypoint (ex. : 01 pour le premier waypoint) et valider avec VAL.</li>
+									<li>Les informations (cap, distance) apparaissent sur le HUD et l’écran ALPHA.</li>
+								</ul>
+								<li>Suivre les repères :</li>
+								<ul>
+									<li>Le VTH affiche une flèche de guidage vers le waypoint ainsi que la distance.</li>
+									<li>L'IDN affiche une flèche de guidage vers le waypoint ainsi que la distance lorsqu'il est en mode NAV.</li>
+								</ul>
+							</ol>
+						</section>
+						<section>
+							<h2>Gestion des Points BAD</h2>
+							<p>Les points BAD (Balistiques ou Designation Airsol) sont des emplacements spécifiques utilisés pour l’attaque au sol.</p>
+							<h3>Création d’un point BAD par coordonnées:</h3>
+							<ol>
+								<li>Basculer en mode BAD sur le PCN.</li>
+								<li>Entrer un numéro de point BAD (01, 02, etc.).</li>
+								<li>Insérer les coordonnées du point et valider.</li>
+							</ol>
+							<h3>Création d’un point BAD par vecteur scalaire :</h3>
+							<ol>
+								<li>Basculer en mode BAD sur le PCN.</li>
+								<li>Entrer un relèvement dans la page θ.</li>
+								<li>Insérer la distance dans la page ρ.</li>
+							</ol>
+							<img src="../../images/BAD.png" heigth="700" width="900">
+							<p>Ces points peuvent être utilisés pour le guidage des munitions ou comme repères pour des attaques air-sol.</p>
+							
+						</section>
                     </div>
 
 				
