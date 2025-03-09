@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> SIN - Lycée Claude de France - Questionnaire </title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<h1> Questionnaire </h1>
+
+		<form><p>
+			<!--Mise en forme de tout le texte sauf Question X-->
+			<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+			<p id="com_resultat"></p>
+
+			<p>
+			<hr align="center" noshade="noshade">
+			<b class="Question">Question 1 :</b>
+			<br>SIN veut dire ?<br>
+			<input type="radio" name="choix1" onclick='q[0]=-1'>Sciences Informatiques et Numération<br>
+			<input type="radio" name="choix1" onclick='q[0]=-1'>Systèmes Informatiques et Numérique<br>
+			<input type="radio" name="choix1" onclick='q[0]=3'>Systèmes d'Information et Numérique<br>
+			<input type="radio" name="choix1" onclick='q[0]=-1'>Sciences de l'Information et Numérique<br>
+
+			<p>
+			<hr align="center" noshade="noshade"> 
+			<b class="Question">Question 2 :</b>
+			<br>L'enseignement de SIN est fait :<br>
+			<input type="radio" name="choix2" onclick='q[1]=-1'>Seulement pour les geeks<br>
+			<input type="radio" name="choix2" onclick='q[1]=-1'>Pour les garçons uniquement<br>
+			<input type="radio" name="choix2" onclick='q[1]=-1'>Pour les robots<br>
+			<input type="radio" name="choix2" onclick='q[1]=3'>Pour quelqu'un qui souhaiterais en apprendre davantage en informatique<br>
+
+			<p>
+			<hr align="center" noshade="noshade"> 
+			<b class="Question">Question 3 :</b>
+			<br>"Il y a 10 types de personnes dans la vie : ceux qui comprennent le binaire et les autres..."<br>Pour un informaticien, est-ce qu'il y a une erreur dans cette phrase ?<br>
+			<input type="radio" name="choix3" onclick='q[2]=-3'>Oui<br>
+			<input type="radio" name="choix3" onclick='q[2]=3'>Non<br>
+
+			<p align="center">
+			<input name="Submit" value="Terminer" onclick="resultat()" type="button"></p>
+
+
+
+		</form>
+
+		<a href="index.html">Retour à l'accueil</a>
+	</body> 
+	<script src="script.js"></script>
+</html>

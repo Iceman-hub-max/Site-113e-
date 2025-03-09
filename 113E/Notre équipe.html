@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Notre équipe</title>
@@ -11,6 +6,37 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+                .toggle-section {
+                    margin: 10px 0;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                }
+                .triangle {
+                    width: 0;
+                    height: 0;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-top: 10px solid black;
+                    margin-right: 10px;
+                    transition: transform 0.3s ease;
+                }
+                .triangle.open {
+                    transform: rotate(-90deg);
+                }
+                .content {
+                    display: none;
+                    margin: 10px 0 0 20px;
+                }
+                .content img {
+                    margin: 10px;
+                    display: block;
+                }
+                .center{
+                    text-align: center;
+                 }
+        </style>
 	</head>
 	<body class="is-preload">
 
@@ -40,11 +66,12 @@
 							<li><a href="Documentation.html">Documentation</a></li>
                             <li class="active"><a href="Notre équipe.html">Notre équipe</a></li>
 							<li><a href="hiérarchie.html"> Hiérarchie</a></li>
-							<li><a href="prochainnement.html"> Prochainnement</a></li>
+							<li><a href="prochainnement.html"> Calendrier</a></li>
 							<li><a href="à propos.html">À propos</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="https://www.instagram.com/113e_escadron_de_robinson/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.twitch.tv/shynix_300iq" class="icon brands fa-twitch"><span class="label">Twitch</span></a></li>
+							<li><a href="#" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
 							<li><a href="https://discord.gg/vKd7KEbtND" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
 							<li><a href="https://www.tiktok.com/@113edr?lang=fr" class="icon brands fa-tiktok"><span class="label">Discord</span></a></li>
 						</ul>
@@ -55,60 +82,385 @@
 						<section>
 							<p>Notre communauté compte près de 40 personnes avec des compétences différentes en fonction de leur connaissances, voici lesquelles ;</p>
 							<ul>
+								<li><a href="#em"> L'Etat Major ;</a></li>
 								<li><a href="#officiers"> Les officiers ;</a></li>
 								<li><a href="#sous-officiers">Les sous-officiers ;</a></li>
 								<li><a href="#les adr">Les aviateurs du rangs .</a></li>
 							</ul>
 						</section>
 						<section>
+							<div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span><h2>Organigrammes</h2></span>
+                            </div>
+                            <div class="content">
+                                <table>
+								<thead>
+									<tr>
+										<th><h2>Administration</h2></th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- Ligne 1 -->
+									<tr>
+										<td>Fondateur</td>
+										<td> Iceman</td>
+									</tr>
+									<tr>
+										<td>Administrateur</td>
+										<td>SHYNIX</td>
+										<td>LAUFLOCON</td>
+										<td>GILLSX</td>
+										<td>CYBERPHOENIX</td>
+									</tr>
+									<tr>
+										<td>Modérateur</td>
+										<td>Grizzly</td>
+										<td>Rocket</td>
+									</tr>
+								</tbody>
+								</table>
+								<table>
+								<thead>
+									<tr>
+										<th><h2>Commissions</h2></th>
+									</tr>
+									
+								</thead>
+								<tbody>
+									<!-- Ligne 1 -->
+									<tr>
+										<td>FORMATION</td>
+										<td> CYBERPHOENIX</td>
+										<td> SHYNIX</td>
+										<td> Gillsx</td>
+										<td> Lauflocon</td>
+									</tr>
+									<tr>
+										<td>PLANNING</td>
+										<td> SHYNIX</td>
+										<td> CYBERPHOENIX</td>
+									</tr>
+									<tr>
+										<td>DEVELOPPEMENT</td>
+										<td> CYBERPHOENIX</td>
+										<td> ICEMAN</td>
+										<td> Grizzly</td>
+									</tr>
+									<tr>
+										<td>COMMUNICATION</td>
+										<td> SHYNIX</td>
+										<td> REDAC</td>
+										<td> ICEMAN</td>
+									</tr>
+									<tr>
+										<td> MISSION</td>
+										<td> SHYNIX</td>
+										<td> LAUFLOCON</td>
+										<td> Gillsx</td>
+									</tr>
+									<tr>
+										<td>DISIGN</td>
+										<td> SHYNIX</td>
+										<td> Gillsx</td>
+									</tr>
+								</tbody>
+								</table>
+                            </div>
+						
+
+							<section>
+						 	<div class="toggle-section" onclick="toggleContent(this)">
+                                <div class="triangle"></div>
+                                <span><h2>Escardres</h2></span>
+                            </div>
+                            <div class="content">
+								
+							<table>
+								<thead>
+									<tr>
+										<th><h2>Mirage - "Alpha"</h2></th>
+									</tr>
+									
+								</thead>
+								<tbody>
+									<tr>
+										<td> Aéroport : </td>
+										<td> Batumi</td>
+									</tr>
+									<tr>
+										<td><h3>Chef</h3></td>
+										<td><h3>Redac</h3></td>
+									</tr>
+									<tr>
+										<td><h3>Adjoint</h3></td>
+										<td> <h3>XERTOX</h3></td>
+									</tr>
+									<tr>
+										<td>Equipier</td>
+										<td> Gillsx<td>
+									</tr>
+									<tr>
+										<td>Equipier</td>
+										<td> Shynix</td>
+									</tr>
+									<tr>
+										<td>Adjoint</td>
+										<td> Lauflocon</td>
+									</tr>
+									<tr>
+										<td>Adjoint</td>
+										<td> CYBERPHOENIX</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<table>
+								<thead>
+									<tr>
+										<th><h2>Rafale - "Bravo"</h2></th>
+									</tr>
+									
+								</thead>
+								<tbody>
+									<tr>
+										<td> Aéroport : </td>
+										<td> </td>
+									</tr>
+									<tr>
+										<td><h3>Chef</h3></td>
+										<td> <h3>SHYNIX</h3></td>
+									</tr>
+									<tr>
+										<td><h3>Adjoint</h3></td>
+										<td><h3> Gillsx</h3></td>
+									</tr>
+									<tr>
+										<td>Equipier</td>
+										<td> XERTOX</td>
+									</tr>
+									<tr>
+										<td>Equipier</td>
+										<td> R_OxD</td>
+									</tr>
+									<tr>
+										<td>Equipier</td>
+										<td> Huskyto</td>
+									</tr>
+									<tr>
+										<td>Equipier</td>
+										<td> Lauflocon</td>
+									</tr>
+									<tr>
+										<td>Equipier</td>
+										<td> foxy1st</td>
+									</tr>
+								</tbody>
+							</table>
+							<table>
+								<thead>
+									<tr>
+										<th><h2>F-15C - "Eagle"</h2></th>
+									</tr>
+									
+								</thead>
+								<tbody>
+									<tr>
+										<td> Aéroport : </td>
+										<td> Sukhumi-Babushara</td>
+									</tr>
+									<tr>
+										<td><h3>Chef</h3></td>
+										<td> <h3>CyberPhoenix</h3></td>
+									</tr>
+									<tr>
+										<td><h3>Adjoint</h3></td>
+										<td><h3>Grizzly</h3></td>
+									</tr>	
+								
+									<tr>
+										<td>Equipier</td>
+										<td> Gillsx</td>
+									</tr>
+									<tr>
+										<td>Equipier</td>
+										<td> Lauflocon</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<table>
+								<thead>
+									<tr>
+										<th><h2>F-18 - "Hornet"</h2></th>
+									</tr>
+									
+								</thead>
+								<tbody>
+									<tr>
+										<td> Aéroport : </td>
+										<td> Kutaisi</td>
+									</tr>
+									<tr>
+										<td><h3>Chef</h3></td>
+										<td><h3>Toopie</h3></td>
+										
+									</tr>
+									<tr>
+										<td><h3>Adjoint</h3></td>
+										<td><h3>Lauflocon</h3></td>
+										
+									</tr>
+									<tr>
+										<td>Equipier</td>
+										<td>Shynix</td>
+									</tr>
+									<tr>
+										<td>Equipier</td>
+										<td> CyberPhoenix</td>
+									</tr>
+									<tr>
+										<td>Equipier</td>
+										<td> Vague</td>
+									</tr>
+									<tr>
+										<td>Equipier</td>
+										<td> XERTOX</td>
+									</tr>
+									<tr>
+										<td>Equipier</td>
+										<td> R_OxD</td>
+									</tr>
+								</tbody>
+							</table>
+							<table>
+								<thead>
+									<tr>
+										<th><h2>Su - "Hotel"</h2></th>
+									</tr>
+									
+								</thead>
+								<tbody>
+									<tr>
+										<td> Aéroport : </td>
+										<td> </td>
+									</tr>
+									<tr>
+										<td><h3>Chef</h3></td>
+										<td><h3>R_OxD</h3></td>
+										
+									</tr>
+									<tr>
+										<td><h3>Adjoint</h3></td>
+										<td><h3>Vaque</h3></td>	
+									</tr>
+									<tr>
+										<td><h3>Adjoint</h3></td>
+										<td><h3>Gillsx</h3></td>	
+									</tr>
+									<tr>
+										<td>Adjoint</td>
+										<td> Lauflocon</td>	
+									</tr>
+									<tr>
+										<td>Adjoint</td>
+										<td> CYBERPHOENIX</td>	
+									</tr>
+									
+								</tbody>
+								</table>
+								<table>
+								<thead>
+									<tr>
+										<th><h2>F-16 - ""</h2></th>
+									</tr>
+									
+								</thead>
+								<tbody>
+									<tr>
+										<td> Aéroport : </td>
+										<td> </td>
+									</tr>
+									<tr>
+										<td><h3>Chef</h3></td>
+										<td><h3>XERTOX</h3></td>
+									</tr>
+									<tr>
+										<td><h3>Adjoint</h3></td>
+										<td><h3>ben</h3></td>
+									</tr>
+									<tr>
+										<td>Equipier</td>
+										<td> Lauflocon</td>
+									</tr>
+								</tbody>
+								</table>
+                            </div>
+							
+							</section>
+
+						<section>
 							<h3>Partenaire :</h3>
 							<ul>
-								<li><a href="membres/fill.html"> fill</a></li>
-								<li><a href="membres/davidsim.html"> DavidSim</a></li>
+								<li>fill</li>
+								<li>DavidSim</li>
+								<li>К О Б А Л Т</li>
+								<li>Tango</li>
+								<li>OBRAG</li>
+
+							</ul>
+						</section>
+
+						<section id="em">
+							<h3>L'Etat Major :</h3>
+							
+							<h4>Général : </h4>
+							<ul>
+								<li><a href="membres/shynix.html"> SHYNIX</a></li>
+							</ul>
+							<h4>Amirale : </h4>
+							<ul>
+								<li><a href="membres/lauflocon.html">lauflocon</a></li>
 							</ul>
 						</section>
 
 						<section id="officiers">
 							<h3>Les officiers supérieurs :</h3>
-							<h4>Instructeur :</h4>
+							
+							<h4>Lieutenant-Colonel : </h4>
 							<ul>
 								<li><a href="membres/cyberphoenix.html"> CyberPhoenix</a></li>
 							</ul>
-
-							<h4>Lieutenant-Colonel : </h4>
-							<ul>
-								<li><a href="membres/shynix.html"> SHYNIX</a></li>
+							
+							<h4> Commandant :</h4>
+							<ul>	
+								<li><a href="membres/gillsx.html"> gillsx</a></li>
 							</ul>
 						</section>
+
 						<section>
 							<h3>Les officiers :</h3>
-							<h4> Commandant :</h4>
-							<ul>
-								<li><a href="membres/lauflocon.html">lauflocon</a></li>
-							</ul>
-
 							<h4> Capitaine :</h4>
 							<ul>
 								<li><a href="membres/iceman.html"> ICEMAN</a></li>
-								<li><a href="membres/gillsx.html"> gillsx</a></li>
 								
-								<li><a href="membres/nounourspolaire.html"> NounoursPolaire</a></li>
+								
+								<li><a href="membres/nounourspolaire.html"> Grizzly</a></li>
 							</ul>
 
 							<h4> Lieutenant :</h4>
-							<ul>
-								
+							<ul>	
 								<li><a href="membres/redac.html"> Redac</a></li>
 							</ul>
 
 							<h4>Sous-Lieutenant :</h4>
 							<ul>
 								<li><a href="membres/rocket.html"> Rocket</a></li>
+								<li><a href="membres/XERTOX.html"> XERTOX</a></li>
 							</ul>
 
 							<h4> Aspirant :</h4>
 							<ul>
-								<li></li>
 							</ul>
 
 							<h4> Major :</h4>
@@ -124,9 +476,9 @@
 							<h4> Pilote senior :</h4>
 
 							<ul>
-								<li><a href="membres/delta.html"> Delta</a></li>
 								<li><a href="membres/vague.html"> Vague</a></li>
 								<li><a href="membres/toopie.html"> Toopie</a></li>
+								<li> R_OxD</li>
 							</ul>
 
 						</section>
@@ -141,23 +493,32 @@
 
 							<h4> Pilote étudiant :</h4>
 							<ul>
-								<li> gerharbarkhorn2</li>
-								<li> jesko</li>
-								<li> Sam</li>
-								<li> tom5454</li>
 								<li> ben272503</li>
+								<li> boss_1842</li>
+								<li> ClemRiser</li>
+								<li> Dusk</li>
 								<li> Exhaust</li>
+								<li> fenoxe</li>
+								<li> foxy1st</li>
+								<li> f3noxe</li>
+								<li> gerharbarkhorn2</li>
 								<li> Gloubi</li>
 								<li> Goldorak™</li>
+								<li> Huskyto</li>
+								<li> jesko</li>
 								<li> Mika</li>
 								<li> Misteryolo64</li>
 								<li> mr.matt.wint</li>
-								<li> Vddsl53🛦</li>
-								<li> XERTOX</li>
+								<li> neyastro</li>
 								<li> Nézox</li>
-								<li> foxy1st</li>
-								<li> Dusk</li>
-								<li> Huskyto</li>
+								<li> NTN</li>
+								<li> ragnarox2.0</li>
+								<li> Sam</li>
+								<li> Skiox</li>
+								<li> tom5454</li>
+								<li> Tommy</li>
+								<li> Vddsl53🛦</li>
+								
 							</ul>
 
 						</section>
@@ -190,6 +551,19 @@
 			</div>
 
 		<!-- Scripts -->
+		  <script>
+                function toggleContent(element) {
+                    const triangle = element.querySelector('.triangle');
+                    const content = element.nextElementSibling;
+
+                    triangle.classList.toggle('open');
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                }
+            </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
